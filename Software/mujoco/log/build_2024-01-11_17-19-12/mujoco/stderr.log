@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:29 (find_package):
+  By not providing "Findcommunication.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "communication", but CMake did not find one.
+
+  Could not find a package configuration file provided by "communication"
+  with any of the following names:
+
+    communicationConfig.cmake
+    communication-config.cmake
+
+  Add the installation prefix of "communication" to CMAKE_PREFIX_PATH or set
+  "communication_DIR" to a directory containing one of the above files.  If
+  "communication" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+gmake: *** [Makefile:429: cmake_check_build_system] Error 1

@@ -1,0 +1,166 @@
+<mujoco model="Robot_Assembly_v3_straight_leg_TPU_foot">
+  <compiler angle="radian" autolimits="true" meshdir="meshes"/>
+  <option collision="all"/>
+	<option timestep='0.0005' iterations='50' 
+        integrator="Euler" gravity='0 0 -9.81' solver='PGS'/>
+  <visual>
+      <quality shadowsize='4096'/>
+      <map znear='0.01'/>
+  </visual>
+
+  <!-- Default classes -->
+  <default>
+      <default class='collision'>
+      <!-- User parameter for geoms is used to identify collision types -->
+      <geom material='collision'  condim='3' contype='3' friction="1.5 0.5 0.5"/>
+      <default class='collision-left'>
+          <geom contype='3'  condim='3' conaffinity='3' />
+      </default>
+        <!-- friction='1 1 0.5' -->
+      <default class='collision-right'>
+          <geom contype='3' condim='3' conaffinity='3' />
+      </default>
+    </default>
+
+    <!-- default joint classes -->
+    <default class='5203_2402_0071_joint'>
+      <joint range='-3.1415927 3.1415927' damping ="7.5" stiffness="0.1" />
+    </default>
+
+    <!-- default motor classes: ctrlrange is Range for clamping the control input -->
+    <default class='5203_2402_0071'>
+      <motor ctrlrange='-9.7 9.7'/>
+      <!-- control input constraint-->
+    </default>
+
+  </default>
+
+  <!-- Assets -->
+  <asset>
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".4 .4 .4" rgb2=".6 .6 .6"
+      width="512" height="512" />
+    <material name='MatPlane'  reflectance='0.3' texture="texplane" texrepeat="1 1"
+      texuniform="true"
+      rgba=".7 .7 .7 1" />
+    <mesh name="base_link" file="base_link.STL"/>
+    <mesh name="right_thigh" file="right_thigh.STL"/>
+    <mesh name="right_shin" file="right_shin.STL"/>
+    <mesh name="left_thigh" file="left_thigh.STL"/>
+    <mesh name="left_shin" file="left_shin.STL"/>
+    <material name='collision' rgba='0.1 0.5 0.9 0'/>
+  </asset>
+  
+
+  
+  <worldbody>
+    <light mode='fixed' pos='0 0 30' dir='0 0 -1'/>
+	  <light directional='true' pos='10 0 15' dir='0 0 -1' diffuse='0.5 0.5 0.5' specular='0 0 0'/>
+		<geom name="floor" type='plane'  size='20 10 0.01' material='MatPlane' class='collision' />
+
+    <body name="pelvis" pos ="0 0 0.46" euler="0 0 0" >
+          <inertial pos="-0.026461 0.0042068 -0.046589" mass="1.5566"
+          fullinertia = "0.0012868 0.0006588 0.0010812 1.3256E-07 6.9038E-07 -1.9643E-09 "/>
+        <joint name="boom_x" type="slide" axis="1 0 0" limited="false" damping='2.0'/>
+        <joint name="boom_z" type="slide" axis="0 0 1" limited="true" range="-0.35 0.15" damping='1.0' stiffness="0"/>
+
+
+        <!-- <joint name="boom_z" type="slide" axis="0 0 1" limited="true" range="-0. 0.15" damping='1.0' stiffness="0"/>
+        <joint name="boom_x" type="slide" axis="1 0 0" limited="true" range="-0.0 0.1" damping='2.0'/> -->
+
+        <joint name="boom_rotation" type="hinge" axis="0 1 0 " pos="-0.02 0 -0.022" limited="true" range="-1.5 1.5" />    
+        <geom type="mesh" rgba="0.392157 0.419608 0.433333 1" mesh="base_link"/>
+        <site name="imu" pos="0 0 0" />
+      <body name="right_thigh" pos="-0.0265 -0.014 -0.0695" gravcomp="0">
+        <inertial pos="0.0011327 -0.038539 -0.08282" quat="1 -1.49713e-05 2.23597e-05 -0.000340158" mass="0.59051" diaginertia="0.00025849 0.00024995 0.00016407"/>
+        <!-- <inertial pos="0 0 0" quat="1 0 0 0" mass="0.69051" diaginertia="1e-3 1e-3 1e-5"/> -->
+        <joint name="right_hip" pos="0 0 0" axis="0 1 0"/>
+        <geom type="mesh" rgba="0.5 0.9 0.2 1" mesh="right_thigh"/>
+        <body name="right_shin" pos="0 -0.0153 -0.168" gravcomp="0">
+          <inertial pos="0.0011432 -0.027083 -0.084517" quat="0.999062 0.00097287 -0.0245571 -0.0356454" mass="0.20666" diaginertia="0.00010722 0.00010827 3.7864E-05"/>
+          <!-- <inertial pos="0 0 0" quat="1 0 0 0" mass="0.1" diaginertia="0.0001 0.0001 0.00001"/> -->
+          <joint name="right_knee" pos="0 0 0" axis="0 1 0"/>
+          <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="right_shin"/>
+            <body name="right_contact_sensor" pos="-.00250 -0.0232 -0.24714861">
+                <inertial pos="0 0 0" mass="1e-6" diaginertia="1e-15 1e-15 1e-15" />
+                <!-- <geom name="right_contact_semisphere" type="sphere" pos="0 0 0" size="0.01620" rgba="0 1 0 0.1" class="collision-right"/> -->
+                <geom name="right_contact_semisphere" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0 1 0 0.0" friction="1.5 0.5 0.5" class="collision-right" />
+                <site name="right_contact_sensor" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0.1 0.7 0.2 0.0" />
+            </body> 
+        </body>
+      </body>
+      <body name="left_thigh" pos="-0.0265 0.014 -0.0695" gravcomp="0">
+        <inertial pos="0.0010867 0.038493 -0.08282" quat="1 0.000258157 -0.000444936 0.00031183" mass="0.59051" diaginertia="0.00025903 0.00024953 0.00016396"/>
+        <!-- <inertial pos="0 0 0" quat="1 0 0 0" mass="0.69051" diaginertia="1e-3 1e-3 1e-5"/> -->
+        <joint name="left_hip" pos="0 0 0" axis="0 1 0"/>
+        <geom type="mesh" rgba="0.5 0.9 0.2 1" mesh="left_thigh"/>
+        <body name="left_shin" pos="0 0.0153 -0.168" gravcomp="0">
+          <inertial pos="0.001146 0.02848 -0.08451" quat="0.99693 -0.00214051 -0.0267574 0.0735527" mass="0.20666" diaginertia="0.00010721 0.00010827 3.7864E-05"/>
+          <!-- <inertial pos="0 0 0" quat="1 0 0 0" mass="0.1" diaginertia="0.0001 0.0001 0.00001"/> -->
+          <joint name="left_knee" pos="0 0 0" axis="0 1 0"/>
+          <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="left_shin"/>
+            <body name="left_contact_sensor" pos="-0.00250 0.0232 -0.24714861">
+                <inertial pos="0 0 0" mass="1e-6" diaginertia="1e-15 1e-15 1e-15" />
+                <geom name="left_contact_semisphere" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0 1 0 0.0" friction="1.5 0.5 0.5" class="collision-left"/>
+                <site name="left_contact_sensor" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0.1 0.7 0.2 0.0" />
+            </body> 
+        </body>
+    </body>
+    </body>
+
+    <camera name="recorder" fovy="60" pos="0.3 -1.0 0.3" xyaxes="1 0 0 0 0 1"/>
+      <!-- <camera fovy="45"  xyaxes="1 0 0 0 0 1">
+    </body> -->
+  </worldbody>
+
+    <!-- <contact>
+    <pair name="right_foot_contact" geom1="right_contact_semisphere" geom2="floor" condim="3"/>
+    <pair name="left_foot_contact" geom1="left_contact_semisphere" geom2="floor" condim="3"/>
+  </contact> -->
+
+  <actuator>
+  <!--  User parameter is the maximum no-load motor RPM,  motor name must use 5 chars ar prefix  -->
+      <motor name="right_hip"   joint="right_hip"   gear="1" forcelimited="auto" class = '5203_2402_0071' />
+      <motor name="right_knee"  joint="right_knee"  gear="1" forcelimited="auto" class = '5203_2402_0071' />
+      <motor name="left_hip"    joint="left_hip"    gear="1" forcelimited="auto" class = '5203_2402_0071' />
+      <motor name="left_knee"   joint="left_knee"   gear="1" forcelimited="auto" class = '5203_2402_0071' />
+      <!-- <motor name="right_hip"   joint="right_hip"   gear="71.2" forcelimited="auto" class = '5203_2402_0071' />
+      <motor name="right_knee"  joint="right_knee"  gear="71.2" forcelimited="auto" class = '5203_2402_0071' />
+      <motor name="left_hip"    joint="left_hip"    gear="71.2" forcelimited="auto" class = '5203_2402_0071' />
+      <motor name="left_knee"   joint="left_knee"   gear="71.2" forcelimited="auto" class = '5203_2402_0071' /> -->
+  </actuator>
+
+  <!-- sensors include joint encoders and imu -->
+  <sensor>
+    <actuatorpos name="right_hip_act_pos" actuator="right_hip" />
+    <actuatorpos name="right_knee_act_pos" actuator="right_knee"/>
+    <actuatorpos name="left_hip_act_pos" actuator="left_hip"/>
+    <actuatorpos name="left_knee_act_pos" actuator="left_knee"/>
+
+    <actuatorvel name="right_hip_act_vel" actuator="right_hip"/>
+    <actuatorvel name="right_knee_act_vel" actuator="right_knee"/>
+    <actuatorvel name="left_hip_act_vel" actuator="left_hip"/>
+    <actuatorvel name="left_knee_act_vel" actuator="left_knee"/>
+
+    <actuatorfrc name="right_hip_act_frc" actuator="right_hip"/>
+    <actuatorfrc name="right_knee_act_frc" actuator="right_knee"/>
+    <actuatorfrc name="left_hip_act_frc" actuator="left_hip"/>
+    <actuatorfrc name="left_knee_act_frc" actuator="left_knee"/>    
+
+    <jointpos name="left_hip_pos"   joint="left_hip"/>
+    <jointpos name="left_knee_pos"  joint="left_knee"/>
+    <jointpos name="right_hip_pos"  joint="right_hip"/>
+    <jointpos name="right_knee_pos" joint="right_knee"/>
+
+    <jointvel name="left_hip_vel" joint="left_hip"/>
+    <jointvel name="left_knee_vel" joint="left_knee"/>
+    <jointvel name="right_hip_vel" joint="right_hip"/>
+    <jointvel name="right_knee_vel" joint="right_knee"/>
+    
+    <touch name= "left_contact" site = "left_contact_sensor" /> 
+    <touch name= "right_contact" site = "right_contact_sensor" /> 
+
+    <framequat name="Body_Quat" objtype="site" objname="imu" />
+    <gyro name="Body_Gyro" site="imu"/>
+    <accelerometer name="Body_Acc" site="imu" />
+  </sensor>
+</mujoco>

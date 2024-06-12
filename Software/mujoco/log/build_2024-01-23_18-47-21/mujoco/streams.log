@@ -1,0 +1,31 @@
+[0.024s] Invoking command in '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/install/mujoco
+[0.032s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.118s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[0.133s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.137s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.151s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.230s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.230s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.294s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.378s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[0.494s] -- Configuring incomplete, errors occurred!
+[0.494s] See also "/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco/CMakeFiles/CMakeOutput.log".
+[0.494s] [31mCMake Error at CMakeLists.txt:29 (find_package):
+[0.494s]   By not providing "Findcommunication.cmake" in CMAKE_MODULE_PATH this
+[0.495s]   project has asked CMake to find a package configuration file provided by
+[0.495s]   "communication", but CMake did not find one.
+[0.495s] 
+[0.495s]   Could not find a package configuration file provided by "communication"
+[0.495s]   with any of the following names:
+[0.495s] 
+[0.495s]     communicationConfig.cmake
+[0.495s]     communication-config.cmake
+[0.495s] 
+[0.495s]   Add the installation prefix of "communication" to CMAKE_PREFIX_PATH or set
+[0.495s]   "communication_DIR" to a directory containing one of the above files.  If
+[0.495s]   "communication" provides a separate development package or SDK, be sure it
+[0.495s]   has been installed.
+[0.495s] 
+[0.495s] [0m
+[0.499s] Invoked command in '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco' returned '1': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/install/mujoco

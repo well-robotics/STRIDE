@@ -1,0 +1,20 @@
+[0.025s] Invoking command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target simulation[0m
+[0.078s] [ 12%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o[0m
+[0.078s] [ 25%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/main.cc.o[0m
+[0.200s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[0.200s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:18:10:[m[K [01;31m[Kfatal error: [m[Kcommunication/msg/ContactForce.msg: No such file or directory
+[0.200s]    18 | #include [01;31m[K"communication/msg/ContactForce.msg"[m[K
+[0.200s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.200s] compilation terminated.
+[0.211s] gmake[2]: *** [CMakeFiles/simulation.dir/build.make:76: CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o] Error 1
+[0.211s] gmake[2]: *** Waiting for unfinished jobs....
+[0.212s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/main.cc:24[m[K:
+[0.212s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:18:10:[m[K [01;31m[Kfatal error: [m[Kcommunication/msg/ContactForce.msg: No such file or directory
+[0.212s]    18 | #include [01;31m[K"communication/msg/ContactForce.msg"[m[K
+[0.212s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.212s] compilation terminated.
+[0.216s] gmake[2]: *** [CMakeFiles/simulation.dir/build.make:132: CMakeFiles/simulation.dir/src/main.cc.o] Error 1
+[0.216s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulation.dir/all] Error 2
+[0.216s] gmake: *** [Makefile:146: all] Error 2
+[0.219s] Invoked command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24

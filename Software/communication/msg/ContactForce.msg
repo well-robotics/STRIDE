@@ -1,0 +1,10 @@
+std_msgs/Header header
+geometry_msgs/Vector3 left_inner_toe
+geometry_msgs/Vector3 left_inner_heel
+geometry_msgs/Vector3 left_outer_toe
+geometry_msgs/Vector3 left_outer_heel
+
+geometry_msgs/Vector3 right_inner_toe
+geometry_msgs/Vector3 right_inner_heel
+geometry_msgs/Vector3 right_outer_toe
+geometry_msgs/Vector3 right_outer_heel

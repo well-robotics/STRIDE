@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000081] (mujoco) JobQueued: {'identifier': 'mujoco', 'dependencies': OrderedDict()}
+[0.000096] (mujoco) JobStarted: {'identifier': 'mujoco'}
+[0.023565] (mujoco) JobProgress: {'identifier': 'mujoco', 'progress': 'cmake'}
+[0.024026] (mujoco) Command: {'cmd': ['/usr/bin/cmake', '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco', '-DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/install/mujoco'], 'cwd': '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'welllab'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib:/home/welllab/.mujoco/mujoco-2.3.2/bin:/home/welllab/.mujoco/mujoco-2.3.2/lib:/usr/lib/nvidia'), ('HOME', '/home/welllab'), ('OLDPWD', '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1870'), ('SYSTEMD_EXEC_PID', '2346'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6921'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'welllab'), ('JOURNAL_STREAM', '8:37108'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'welllab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib:/home/welllab/.mujoco/mujoco-2.3.2/bin:/home/welllab/.mujoco/mujoco-2.3.2/lib:/usr/lib/nvidia:/opt/ros/iron/bin:/opt/drake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/welllab-ThinkStation-P360:@/tmp/.ICE-unix/2076,unix/welllab-ThinkStation-P360:/tmp/.ICE-unix/2076'), ('INVOCATION_ID', '1ec2befdc99c43648015970a632c3673'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.06QMH2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:6b952d9b-b4b1-4d3b-abf7-20483b08120f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages:/opt/drake/lib/python3.10/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.066547] (mujoco) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099575] (-) TimerEvent: {}
+[0.113737] (mujoco) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.118973] (mujoco) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.195427] (mujoco) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.199664] (-) TimerEvent: {}
+[0.201508] (mujoco) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.201846] (mujoco) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.202286] (mujoco) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.205866] (mujoco) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299846] (-) TimerEvent: {}
+[0.322587] (mujoco) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.327449] (mujoco) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.327663] (mujoco) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.328043] (mujoco) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.329311] (mujoco) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.399996] (-) TimerEvent: {}
+[0.446799] (mujoco) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.494990] (mujoco) StdoutLine: {'line': b'-- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[0.500150] (-) TimerEvent: {}
+[0.514207] (mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[0.519540] (mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[0.527080] (mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.536225] (mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600228] (-) TimerEvent: {}
+[0.619315] (mujoco) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[0.620440] (mujoco) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700448] (-) TimerEvent: {}
+[0.705852] (mujoco) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.737596] (mujoco) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[0.762119] (mujoco) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800593] (-) TimerEvent: {}
+[0.850547] (mujoco) StdoutLine: {'line': b'-- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)\n'}
+[0.900756] (-) TimerEvent: {}
+[0.966074] (mujoco) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:28 (find_package):\n'}
+[0.966229] (mujoco) StderrLine: {'line': b'  By not providing "Finddescription.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.966266] (mujoco) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.966290] (mujoco) StderrLine: {'line': b'  "description", but CMake did not find one.\n'}
+[0.966314] (mujoco) StderrLine: {'line': b'\n'}
+[0.966337] (mujoco) StderrLine: {'line': b'  Could not find a package configuration file provided by "description" with\n'}
+[0.966362] (mujoco) StderrLine: {'line': b'  any of the following names:\n'}
+[0.966384] (mujoco) StderrLine: {'line': b'\n'}
+[0.966407] (mujoco) StderrLine: {'line': b'    descriptionConfig.cmake\n'}
+[0.966429] (mujoco) StderrLine: {'line': b'    description-config.cmake\n'}
+[0.966451] (mujoco) StderrLine: {'line': b'\n'}
+[0.966494] (mujoco) StderrLine: {'line': b'  Add the installation prefix of "description" to CMAKE_PREFIX_PATH or set\n'}
+[0.966517] (mujoco) StderrLine: {'line': b'  "description_DIR" to a directory containing one of the above files.  If\n'}
+[0.966539] (mujoco) StderrLine: {'line': b'  "description" provides a separate development package or SDK, be sure it\n'}
+[0.966562] (mujoco) StderrLine: {'line': b'  has been installed.\n'}
+[0.966584] (mujoco) StderrLine: {'line': b'\n'}
+[0.966606] (mujoco) StderrLine: {'line': b'\x1b[0m\n'}
+[0.966628] (mujoco) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.966658] (mujoco) StdoutLine: {'line': b'See also "/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco/CMakeFiles/CMakeOutput.log".\n'}
+[0.971501] (mujoco) CommandEnded: {'returncode': 1}
+[0.996414] (mujoco) JobEnded: {'identifier': 'mujoco', 'rc': 1}
+[1.000948] (-) TimerEvent: {}
+[1.006857] (-) EventReactorShutdown: {}

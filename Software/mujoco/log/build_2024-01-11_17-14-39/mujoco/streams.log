@@ -1,0 +1,58 @@
+[0.024s] Invoking command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/install/mujoco
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.191s] -- Detecting C compiler ABI info - done
+[0.195s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.195s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.197s] -- Detecting CXX compiler ABI info
+[0.272s] -- Detecting CXX compiler ABI info - done
+[0.276s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.276s] -- Detecting CXX compile features
+[0.276s] -- Detecting CXX compile features - done
+[0.278s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.379s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.428s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[0.451s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.456s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.464s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.474s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.559s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.560s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.631s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.651s] -- Found FastRTPS: /opt/ros/iron/include  
+[0.674s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.761s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[0.869s] -- Found tf2: 0.31.5 (/opt/ros/iron/share/tf2/cmake)
+[0.876s] -- Found tf2_ros: 0.31.5 (/opt/ros/iron/share/tf2_ros/cmake)
+[1.104s] -- Found nav_msgs: 5.0.0 (/opt/ros/iron/share/nav_msgs/cmake)
+[1.168s] -- Found cv_bridge: 3.4.0 (/opt/ros/iron/share/cv_bridge/cmake)
+[1.216s] -- Configuring done
+[1.223s] -- Generating done
+[1.224s] -- Build files have been written to: /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco
+[1.230s] Invoked command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/install/mujoco
+[1.232s] Invoking command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24
+[1.279s] [ 12%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o[0m
+[1.280s] [ 25%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/glfw_adapter.cc.o[0m
+[1.281s] [ 50%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/glfw_dispatch.cc.o[0m
+[1.282s] [ 50%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/lodepng.cpp.o[0m
+[1.282s] [ 62%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/main.cc.o[0m
+[1.283s] [ 75%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/platform_ui_adapter.cc.o[0m
+[1.284s] [ 87%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/simulate.cc.o[0m
+[1.417s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[1.418s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:17:10:[m[K [01;31m[Kfatal error: [m[Kcommunication/msg/contact_force.hpp: No such file or directory
+[1.418s]    17 | #include [01;31m[K"communication/msg/contact_force.hpp"[m[K
+[1.418s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.418s] compilation terminated.
+[1.419s] gmake[2]: *** [CMakeFiles/simulation.dir/build.make:76: CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o] Error 1
+[1.419s] gmake[2]: *** Waiting for unfinished jobs....
+[1.434s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/main.cc:24[m[K:
+[1.435s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:17:10:[m[K [01;31m[Kfatal error: [m[Kcommunication/msg/contact_force.hpp: No such file or directory
+[1.435s]    17 | #include [01;31m[K"communication/msg/contact_force.hpp"[m[K
+[1.435s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.435s] compilation terminated.
+[1.436s] gmake[2]: *** [CMakeFiles/simulation.dir/build.make:132: CMakeFiles/simulation.dir/src/main.cc.o] Error 1
+[1.762s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulation.dir/all] Error 2
+[1.762s] gmake: *** [Makefile:146: all] Error 2
+[1.765s] Invoked command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24

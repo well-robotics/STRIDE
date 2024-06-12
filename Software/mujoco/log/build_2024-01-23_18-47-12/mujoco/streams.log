@@ -1,0 +1,46 @@
+[0.025s] Invoking command in '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/install/mujoco
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.119s] -- Detecting C compiler ABI info
+[0.195s] -- Detecting C compiler ABI info - done
+[0.202s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.202s] -- Detecting C compile features
+[0.202s] -- Detecting C compile features - done
+[0.206s] -- Detecting CXX compiler ABI info
+[0.323s] -- Detecting CXX compiler ABI info - done
+[0.327s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.328s] -- Detecting CXX compile features
+[0.328s] -- Detecting CXX compile features - done
+[0.329s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.447s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.495s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[0.514s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.520s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.527s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.536s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.619s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.620s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.706s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.738s] -- Found FastRTPS: /opt/ros/iron/include  
+[0.762s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.851s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[0.966s] [31mCMake Error at CMakeLists.txt:28 (find_package):
+[0.966s]   By not providing "Finddescription.cmake" in CMAKE_MODULE_PATH this project
+[0.966s]   has asked CMake to find a package configuration file provided by
+[0.966s]   "description", but CMake did not find one.
+[0.966s] 
+[0.966s]   Could not find a package configuration file provided by "description" with
+[0.966s]   any of the following names:
+[0.966s] 
+[0.966s]     descriptionConfig.cmake
+[0.966s]     description-config.cmake
+[0.966s] 
+[0.966s]   Add the installation prefix of "description" to CMAKE_PREFIX_PATH or set
+[0.966s]   "description_DIR" to a directory containing one of the above files.  If
+[0.966s]   "description" provides a separate development package or SDK, be sure it
+[0.966s]   has been installed.
+[0.967s] 
+[0.967s] [0m
+[0.967s] -- Configuring incomplete, errors occurred!
+[0.967s] See also "/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco/CMakeFiles/CMakeOutput.log".
+[0.972s] Invoked command in '/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/build/mujoco' returned '1': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/PlanarBipedSimulator/mujoco/install/mujoco

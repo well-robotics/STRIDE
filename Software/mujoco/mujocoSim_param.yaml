@@ -1,0 +1,12 @@
+Robot:
+        is_simulation: true
+        if_pinPelvis: false
+        if_synchronize: true
+        dt: 0.0005
+        frictionCoef: 0.8    <!-- friction matters, -->
+        footLength: 0.14
+        log_estimation: true
+        log_interface:  true
+        log_controller: true
+        whichEstimation: "NONE"  <!-- "EKF", "MHE","QP", "NONE" -->
+        use_ekf:        false

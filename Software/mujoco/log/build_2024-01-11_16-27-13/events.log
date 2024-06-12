@@ -1,0 +1,523 @@
+[0.000000] (-) TimerEvent: {}
+[0.000099] (mujoco) JobQueued: {'identifier': 'mujoco', 'dependencies': OrderedDict()}
+[0.000435] (mujoco) JobStarted: {'identifier': 'mujoco'}
+[0.024529] (mujoco) JobProgress: {'identifier': 'mujoco', 'progress': 'cmake'}
+[0.024821] (mujoco) JobProgress: {'identifier': 'mujoco', 'progress': 'build'}
+[0.024894] (mujoco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco', '--', '-j24', '-l24'], 'cwd': '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_US:en'), ('USER', 'welllab'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia'), ('HOME', '/home/welllab'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/welllab/Yicheng-Zeng/BUCKY_RL'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1898'), ('SYSTEMD_EXEC_PID', '2366'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4749'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'welllab'), ('JOURNAL_STREAM', '8:41594'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'welllab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('PATH', '/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/home/welllab/anaconda3/bin:/home/welllab/anaconda3/condabin:/home/welllab/.mujoco/mujoco210/bin:/usr/lib/nvidia:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/welllab-ThinkStation-P360:@/tmp/.ICE-unix/2110,unix/welllab-ThinkStation-P360:/tmp/.ICE-unix/2110'), ('INVOCATION_ID', 'd916e8f8e839413c8542ee367b5dcb37'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libGLEW.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.M22HH2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('CONDA_PYTHON_EXE', '/home/welllab/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:ebcd02ee-3d26-450c-b9fd-8d3a0f143a40'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/welllab/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/welllab/anaconda3'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.055105] (mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simulation\x1b[0m\n'}
+[0.076457] (mujoco) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o\x1b[0m\n'}
+[0.077429] (mujoco) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/simulation.dir/src/main.cc.o\x1b[0m\n'}
+[0.099959] (-) TimerEvent: {}
+[0.200175] (-) TimerEvent: {}
+[0.300452] (-) TimerEvent: {}
+[0.400743] (-) TimerEvent: {}
+[0.501028] (-) TimerEvent: {}
+[0.601320] (-) TimerEvent: {}
+[0.701617] (-) TimerEvent: {}
+[0.801904] (-) TimerEvent: {}
+[0.902189] (-) TimerEvent: {}
+[1.002479] (-) TimerEvent: {}
+[1.102788] (-) TimerEvent: {}
+[1.203090] (-) TimerEvent: {}
+[1.303355] (-) TimerEvent: {}
+[1.332833] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/main.cc:23\x1b[m\x1b[K:\n'}
+[1.333037] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/mujoco_sim_helper.hpp:12:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KT_hold_in_air\x1b[m\x1b[K\xe2\x80\x99 initialized and declared \xe2\x80\x98\x1b[01m\x1b[Kextern\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333107] (mujoco) StderrLine: {'line': b'   12 |     extern double \x1b[01;35m\x1b[KT_hold_in_air\x1b[m\x1b[K = 1;\n'}
+[1.333157] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.333201] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/mujoco_sim_helper.hpp:13:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KT_partial_release\x1b[m\x1b[K\xe2\x80\x99 initialized and declared \xe2\x80\x98\x1b[01m\x1b[Kextern\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333244] (mujoco) StderrLine: {'line': b'   13 |     extern double \x1b[01;35m\x1b[KT_partial_release\x1b[m\x1b[K = 1.5;\n'}
+[1.333283] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.333321] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/mujoco_sim_helper.hpp:14:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KT_release_horizontal\x1b[m\x1b[K\xe2\x80\x99 initialized and declared \xe2\x80\x98\x1b[01m\x1b[Kextern\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333359] (mujoco) StderrLine: {'line': b'   14 |     extern double \x1b[01;35m\x1b[KT_release_horizontal\x1b[m\x1b[K = 2;\n'}
+[1.333398] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.372740] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/main.cc:24\x1b[m\x1b[K:\n'}
+[1.372921] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:58:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KData_Logger\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.372977] (mujoco) StderrLine: {'line': b'   58 |         \x1b[01;31m\x1b[KData_Logger\x1b[m\x1b[K logger;\n'}
+[1.373017] (mujoco) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.378321] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3\x1b[m\x1b[K:\n'}
+[1.378443] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:58:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KData_Logger\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.378484] (mujoco) StderrLine: {'line': b'   58 |         \x1b[01;31m\x1b[KData_Logger\x1b[m\x1b[K logger;\n'}
+[1.378520] (mujoco) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.382722] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.382836] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.382882] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.382923] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.382959] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.383003] (mujoco) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.388121] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.388201] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.388241] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.388276] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.388311] (mujoco) StderrLine: {'line': b'   68 | ::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.388344] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.388377] (mujoco) StderrLine: {'line': b'\n'}
+[1.392447] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.392532] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.392573] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.392607] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.392641] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.392679] (mujoco) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.397585] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.397662] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.397701] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.397737] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.397772] (mujoco) StderrLine: {'line': b'   68 | ::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.397806] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.397840] (mujoco) StderrLine: {'line': b'\n'}
+[1.402015] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.402080] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.402125] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.402161] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.402197] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.402232] (mujoco) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.402266] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[1.402299] (mujoco) StderrLine: {'line': b'   68 |             const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Request> request,\n'}
+[1.402333] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.402366] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.402400] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.402433] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.402466] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass template placeholder \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 not permitted in this context\n'}
+[1.402500] (mujoco) StderrLine: {'line': b'   68 |             \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<communication::srv::SimulationReset::Request> request,\n'}
+[1.402532] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.403405] (-) TimerEvent: {}
+[1.407216] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.407295] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.407338] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.407374] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.407409] (mujoco) StderrLine: {'line': b'   68 | ::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.407447] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.407482] (mujoco) StderrLine: {'line': b'\n'}
+[1.407514] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[1.407548] (mujoco) StderrLine: {'line': b'   68 |             const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Request> request,\n'}
+[1.407581] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.407615] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.407654] (mujoco) StderrLine: {'line': b'   68 |             const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.407688] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.407721] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass template placeholder \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 not permitted in this context\n'}
+[1.407758] (mujoco) StderrLine: {'line': b'   68 |             \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<communication::srv::SimulationReset::Request> request,\n'}
+[1.407792] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.412023] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.412109] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.412151] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.412186] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.412221] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response\n'}
+[1.412254] (mujoco) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.416853] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.416918] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.416978] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.417013] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.417047] (mujoco) StderrLine: {'line': b'   69 | :shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response\n'}
+[1.417080] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.417114] (mujoco) StderrLine: {'line': b'\n'}
+[1.421863] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.421952] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.421998] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.422037] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.422080] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response\n'}
+[1.422115] (mujoco) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.426475] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.426530] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.426574] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.426611] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.426647] (mujoco) StderrLine: {'line': b'   69 | :shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response\n'}
+[1.426686] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.426718] (mujoco) StderrLine: {'line': b'\n'}
+[1.432058] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.432132] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.432185] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.432209] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.432232] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response\n'}
+[1.432254] (mujoco) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.432276] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[1.432298] (mujoco) StderrLine: {'line': b'   69 |             \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Response> response\n'}
+[1.432320] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.432349] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.432371] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.432394] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.432415] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass template placeholder \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 not permitted in this context\n'}
+[1.432437] (mujoco) StderrLine: {'line': b'   69 |             \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Response> response\n'}
+[1.432460] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.436223] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.436291] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.436331] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.436355] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.436380] (mujoco) StderrLine: {'line': b'   69 | :shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response\n'}
+[1.436402] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.436423] (mujoco) StderrLine: {'line': b'\n'}
+[1.436444] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[1.436465] (mujoco) StderrLine: {'line': b'   69 |             \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Response> response\n'}
+[1.436486] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.436507] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.436529] (mujoco) StderrLine: {'line': b'   69 |             std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response\n'}
+[1.436549] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.436571] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass template placeholder \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 not permitted in this context\n'}
+[1.436593] (mujoco) StderrLine: {'line': b'   69 |             \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Response> response\n'}
+[1.436614] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.437285] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.437346] (mujoco) StderrLine: {'line': b'   85 |             const \x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ActuatorCmds::SharedPtr msg) const;\n'}
+[1.437382] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.437405] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.437429] (mujoco) StderrLine: {'line': b'   85 |             const communication::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const;\n'}
+[1.437451] (mujoco) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.437477] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.437499] (mujoco) StderrLine: {'line': b'   85 |             const communication::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const;\n'}
+[1.437520] (mujoco) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.437542] (mujoco) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.437565] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:84:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.437586] (mujoco) StderrLine: {'line': b'   84 |         void actuator_cmd_callback\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[1.437607] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.437627] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.437648] (mujoco) StderrLine: {'line': b'   85 |             const communication::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::ActuatorCmds::SharedPtr msg) const;\n'}
+[1.437668] (mujoco) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.437690] (mujoco) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.440731] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KActuatorCmds\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.440797] (mujoco) StderrLine: {'line': b'   85 |             const communication::msg::\x1b[01;31m\x1b[KActuatorCmds\x1b[m\x1b[K::SharedPtr msg) const;\n'}
+[1.440826] (mujoco) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.441394] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.441454] (mujoco) StderrLine: {'line': b'   85 |             const \x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ActuatorCmds::SharedPtr msg) const;\n'}
+[1.441483] (mujoco) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.441507] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.441530] (mujoco) StderrLine: {'line': b'   85 |             const communication::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const;\n'}
+[1.441552] (mujoco) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.441574] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.441596] (mujoco) StderrLine: {'line': b'   85 |             const communication::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const;\n'}
+[1.441623] (mujoco) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.441645] (mujoco) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.441666] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:84:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.441688] (mujoco) StderrLine: {'line': b'   84 |         void actuator_cmd_callback\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[1.441709] (mujoco) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.441730] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.441751] (mujoco) StderrLine: {'line': b'   85 |             const communication::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::ActuatorCmds::SharedPtr msg) const;\n'}
+[1.441771] (mujoco) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.441792] (mujoco) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.444832] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KActuatorCmds\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.444896] (mujoco) StderrLine: {'line': b'   85 |             const communication::msg::\x1b[01;31m\x1b[KActuatorCmds\x1b[m\x1b[K::SharedPtr msg) const;\n'}
+[1.444926] (mujoco) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.456516] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.456606] (mujoco) StderrLine: {'line': b'  108 |         rclcpp::Publisher<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ContactForce>::SharedPtr\n'}
+[1.456636] (mujoco) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.456659] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.456683] (mujoco) StderrLine: {'line': b'  108 |         rclcpp::Publisher<communication::msg::ContactForce\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr\n'}
+[1.456705] (mujoco) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.456727] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.456750] (mujoco) StderrLine: {'line': b'  108 |         rclcpp::Publisher<communication::msg::ContactForce>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.456771] (mujoco) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.456792] (mujoco) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.460432] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.460499] (mujoco) StderrLine: {'line': b'  108 |         rclcpp::Publisher<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ContactForce>::SharedPtr\n'}
+[1.460527] (mujoco) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.460554] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.460578] (mujoco) StderrLine: {'line': b'  108 |       rclcpp::Publisher<communication::msg::ContactForce\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr\n'}
+[1.460601] (mujoco) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.460623] (mujoco) StderrLine: {'line': b'\n'}
+[1.460645] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.460666] (mujoco) StderrLine: {'line': b'  108 |      rclcpp::Publisher<communication::msg::ContactForce>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.460688] (mujoco) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.460709] (mujoco) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.470096] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:109:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.470174] (mujoco) StderrLine: {'line': b'  109 |             \x1b[01;31m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K;\n'}
+[1.470204] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.473985] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:109:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.474045] (mujoco) StderrLine: {'line': b'  109 |             \x1b[01;31m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K;\n'}
+[1.474074] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.482004] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.482078] (mujoco) StderrLine: {'line': b'  114 |         rclcpp::Subscription<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ActuatorCmds>::SharedPtr\n'}
+[1.482109] (mujoco) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.482133] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.482156] (mujoco) StderrLine: {'line': b'  114 |         rclcpp::Subscription<communication::msg::ActuatorCmds\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr\n'}
+[1.482246] (mujoco) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.482270] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.482294] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[1.482316] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[1.482337] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.482359] (mujoco) StderrLine: {'line': b'  114 |         rclcpp::Subscription<communication::msg::ActuatorCmds>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.482381] (mujoco) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.482402] (mujoco) StderrLine: {'line': b'      |                                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.482423] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.482445] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.482466] (mujoco) StderrLine: {'line': b'  108 |         rclcpp::Publisher<communication::msg::ContactForce>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.482489] (mujoco) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.485799] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.485858] (mujoco) StderrLine: {'line': b'  114 |         rclcpp::Subscription<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ActuatorCmds>::SharedPtr\n'}
+[1.485886] (mujoco) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.485910] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.485938] (mujoco) StderrLine: {'line': b'  114 |    rclcpp::Subscription<communication::msg::ActuatorCmds\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr\n'}
+[1.485960] (mujoco) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.485984] (mujoco) StderrLine: {'line': b'\n'}
+[1.486005] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.486026] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[1.486047] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[1.486068] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.486092] (mujoco) StderrLine: {'line': b'  114 |   rclcpp::Subscription<communication::msg::ActuatorCmds>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.486113] (mujoco) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.486134] (mujoco) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.486154] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.486175] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.486196] (mujoco) StderrLine: {'line': b'  108 |      rclcpp::Publisher<communication::msg::ContactForce>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.486218] (mujoco) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.486241] (mujoco) StderrLine: {'line': b'\n'}
+[1.495672] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:115:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kactuator_cmd_subscription_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.495732] (mujoco) StderrLine: {'line': b'  115 |             \x1b[01;31m\x1b[Kactuator_cmd_subscription_\x1b[m\x1b[K;\n'}
+[1.495760] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.499402] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:115:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kactuator_cmd_subscription_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.499461] (mujoco) StderrLine: {'line': b'  115 |             \x1b[01;31m\x1b[Kactuator_cmd_subscription_\x1b[m\x1b[K;\n'}
+[1.499489] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.503510] (-) TimerEvent: {}
+[1.505458] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.505532] (mujoco) StderrLine: {'line': b'  117 |         rclcpp::Service<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset>::SharedPtr\n'}
+[1.505567] (mujoco) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.505592] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.505616] (mujoco) StderrLine: {'line': b'  117 |         rclcpp::Service<communication::srv::SimulationReset\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr\n'}
+[1.505639] (mujoco) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.505661] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.505690] (mujoco) StderrLine: {'line': b'  117 |         rclcpp::Service<communication::srv::SimulationReset>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.505712] (mujoco) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.505733] (mujoco) StderrLine: {'line': b'      |                                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.505755] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.505779] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.505802] (mujoco) StderrLine: {'line': b'  108 |         rclcpp::Publisher<communication::msg::ContactForce>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.505824] (mujoco) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.508942] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.509008] (mujoco) StderrLine: {'line': b'  117 |         rclcpp::Service<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset>::SharedPtr\n'}
+[1.509037] (mujoco) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.509061] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.509084] (mujoco) StderrLine: {'line': b'  117 |      rclcpp::Service<communication::srv::SimulationReset\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr\n'}
+[1.509107] (mujoco) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.509128] (mujoco) StderrLine: {'line': b'\n'}
+[1.509151] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.509174] (mujoco) StderrLine: {'line': b'  117 |     rclcpp::Service<communication::srv::SimulationReset>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.509196] (mujoco) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.509216] (mujoco) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.509236] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.509257] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.509280] (mujoco) StderrLine: {'line': b'  108 |      rclcpp::Publisher<communication::msg::ContactForce>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K\n'}
+[1.509301] (mujoco) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.509326] (mujoco) StderrLine: {'line': b'\n'}
+[1.509547] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:118:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreset_service_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.509608] (mujoco) StderrLine: {'line': b'  118 |             \x1b[01;31m\x1b[Kreset_service_\x1b[m\x1b[K;\n'}
+[1.509636] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.513167] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:118:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreset_service_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.513230] (mujoco) StderrLine: {'line': b'  118 |             \x1b[01;31m\x1b[Kreset_service_\x1b[m\x1b[K;\n'}
+[1.513258] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.517596] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mujoco_ros2::MuJoCoMessageHandler::init_logging()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.517672] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:62:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.517702] (mujoco) StderrLine: {'line': b'   62 |             \x1b[01;31m\x1b[Klogger\x1b[m\x1b[K.init("mujocoSim");\n'}
+[1.517726] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.521384] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mujoco_ros2::MuJoCoMessageHandler::init_logging()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.521447] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:62:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.521476] (mujoco) StderrLine: {'line': b'   62 |             \x1b[01;31m\x1b[Klogger\x1b[m\x1b[K.init("mujocoSim");\n'}
+[1.521501] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.530765] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kmujoco_ros2::MuJoCoMessageHandler::MuJoCoMessageHandler(mujoco::Simulate*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.530858] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreset_service_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcreate_service\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.530889] (mujoco) StderrLine: {'line': b'   18 |     \x1b[01;31m\x1b[Kreset_service_\x1b[m\x1b[K = this->create_service<communication::srv::SimulationReset>(\n'}
+[1.530914] (mujoco) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.530937] (mujoco) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kcreate_service\x1b[m\x1b[K\n'}
+[1.540748] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.540853] (mujoco) StderrLine: {'line': b'   18 |     reset_service_ = this->create_service<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset>(\n'}
+[1.540884] (mujoco) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.540908] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.540933] (mujoco) StderrLine: {'line': b'   18 |     reset_service_ = this->\x1b[01;31m\x1b[Kcreate_service<communication::srv::SimulationReset>\x1b[m\x1b[K(\n'}
+[1.540955] (mujoco) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.544179] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmujoco_ros2::MuJoCoMessageHandler::create_service<<expression error> >(std::__cxx11::basic_string<char>, std::_Bind_helper<false, void (mujoco_ros2::MuJoCoMessageHandler::*)(...), mujoco_ros2::MuJoCoMessageHandler*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.544243] (mujoco) StderrLine: {'line': b'   18 | rvice_ = \x1b[01;31m\x1b[Kthis->create_service<communication::srv::SimulationReset>(\x1b[m\x1b[K\n'}
+[1.544272] (mujoco) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.544301] (mujoco) StderrLine: {'line': b'\n'}
+[1.544323] (mujoco) StderrLine: {'line': b'   19 | \x1b[01;31m\x1b[K_prefix + "sim_reset",\x1b[m\x1b[K\n'}
+[1.544346] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                             \n'}
+[1.544368] (mujoco) StderrLine: {'line': b'\n'}
+[1.544389] (mujoco) StderrLine: {'line': b'   20 | \x1b[01;31m\x1b[K:bind(&MuJoCoMessageHandler::reset_callback, this,\x1b[m\x1b[K\n'}
+[1.544410] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                 \n'}
+[1.544431] (mujoco) StderrLine: {'line': b'\n'}
+[1.544452] (mujoco) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[K      std::placeholders::_1, std::placeholders::_2))\x1b[m\x1b[K;\n'}
+[1.544473] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K               \n'}
+[1.544496] (mujoco) StderrLine: {'line': b'\n'}
+[1.544518] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.544540] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.544561] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[1.544583] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7\x1b[m\x1b[K,\n'}
+[1.544604] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3\x1b[m\x1b[K:\n'}
+[1.544626] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.544649] (mujoco) StderrLine: {'line': b'  299 |   \x1b[01;36m\x1b[Kcreate_service\x1b[m\x1b[K(\n'}
+[1.544670] (mujoco) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.544690] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.544713] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.544733] (mujoco) StderrLine: {'line': b'   18 | rvice_ = \x1b[01;31m\x1b[Kthis->create_service<communication::srv::SimulationReset>(\x1b[m\x1b[K\n'}
+[1.544753] (mujoco) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.544774] (mujoco) StderrLine: {'line': b'\n'}
+[1.544794] (mujoco) StderrLine: {'line': b'   19 | \x1b[01;31m\x1b[K_prefix + "sim_reset",\x1b[m\x1b[K\n'}
+[1.544814] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                             \n'}
+[1.544834] (mujoco) StderrLine: {'line': b'\n'}
+[1.544854] (mujoco) StderrLine: {'line': b'   20 | \x1b[01;31m\x1b[K:bind(&MuJoCoMessageHandler::reset_callback, this,\x1b[m\x1b[K\n'}
+[1.544875] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                 \n'}
+[1.544895] (mujoco) StderrLine: {'line': b'\n'}
+[1.544915] (mujoco) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[K      std::placeholders::_1, std::placeholders::_2))\x1b[m\x1b[K;\n'}
+[1.544935] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K               \n'}
+[1.544955] (mujoco) StderrLine: {'line': b'\n'}
+[1.544975] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.544995] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.545016] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[1.545036] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7\x1b[m\x1b[K,\n'}
+[1.545056] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3\x1b[m\x1b[K:\n'}
+[1.545077] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:315:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rclcpp::QoS&, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.545102] (mujoco) StderrLine: {'line': b'  315 |   \x1b[01;36m\x1b[Kcreate_service\x1b[m\x1b[K(\n'}
+[1.545123] (mujoco) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.545144] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:315:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.545164] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.545185] (mujoco) StderrLine: {'line': b'   18 | rvice_ = \x1b[01;31m\x1b[Kthis->create_service<communication::srv::SimulationReset>(\x1b[m\x1b[K\n'}
+[1.545207] (mujoco) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.545227] (mujoco) StderrLine: {'line': b'\n'}
+[1.545247] (mujoco) StderrLine: {'line': b'   19 | \x1b[01;31m\x1b[K_prefix + "sim_reset",\x1b[m\x1b[K\n'}
+[1.545268] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                             \n'}
+[1.545291] (mujoco) StderrLine: {'line': b'\n'}
+[1.545311] (mujoco) StderrLine: {'line': b'   20 | \x1b[01;31m\x1b[K:bind(&MuJoCoMessageHandler::reset_callback, this,\x1b[m\x1b[K\n'}
+[1.545331] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                 \n'}
+[1.545350] (mujoco) StderrLine: {'line': b'\n'}
+[1.545370] (mujoco) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[K      std::placeholders::_1, std::placeholders::_2))\x1b[m\x1b[K;\n'}
+[1.545390] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K               \n'}
+[1.545410] (mujoco) StderrLine: {'line': b'\n'}
+[1.565682] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.565792] (mujoco) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K = this->create_publisher<communication::msg::ContactForce>(\n'}
+[1.565822] (mujoco) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.565845] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:32:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.565869] (mujoco) StderrLine: {'line': b'   32 |     contact_sensor_publisher_ = this->\x1b[01;31m\x1b[Kcreate_publisher<communication::msg::ContactForce>\x1b[m\x1b[K(\n'}
+[1.565892] (mujoco) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.565913] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:32:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmujoco_ros2::MuJoCoMessageHandler::create_publisher<communication>(std::__cxx11::basic_string<char>, rclcpp::QoS&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.565939] (mujoco) StderrLine: {'line': b'   32 | lisher_ = \x1b[01;31m\x1b[Kthis->create_publisher<communication::msg::ContactForce>(\x1b[m\x1b[K\n'}
+[1.565961] (mujoco) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.565982] (mujoco) StderrLine: {'line': b'\n'}
+[1.566003] (mujoco) StderrLine: {'line': b'   33 | \x1b[01;31m\x1b[K"contact_states", qos)\x1b[m\x1b[K;\n'}
+[1.566024] (mujoco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                             \n'}
+[1.566046] (mujoco) StderrLine: {'line': b'\n'}
+[1.566065] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:1611\x1b[m\x1b[K,\n'}
+[1.566087] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.566108] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.566129] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[1.566149] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7\x1b[m\x1b[K,\n'}
+[1.566170] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3\x1b[m\x1b[K:\n'}
+[1.566190] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:73:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.566221] (mujoco) StderrLine: {'line': b'   73 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_publisher(\n'}
+[1.566242] (mujoco) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.566263] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:73:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.592027] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:65:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kactuator_cmd_subscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.592140] (mujoco) StderrLine: {'line': b'   65 |     \x1b[01;31m\x1b[Kactuator_cmd_subscription_\x1b[m\x1b[K =\n'}
+[1.592179] (mujoco) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.592202] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:66:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.592227] (mujoco) StderrLine: {'line': b'   66 |         this->\x1b[01;31m\x1b[Kcreate_subscription<communication::msg::ActuatorCmds>\x1b[m\x1b[K(\n'}
+[1.592250] (mujoco) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.593815] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:66:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmujoco_ros2::MuJoCoMessageHandler::create_subscription<communication>(const char [21], rclcpp::QoS&, std::_Bind_helper<false, void (mujoco_ros2::MuJoCoMessageHandler::*)(...), mujoco_ros2::MuJoCoMessageHandler*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.593876] (mujoco) StderrLine: {'line': b'   66 |        \x1b[01;31m\x1b[Kthis->create_subscription<communication::msg::ActuatorCmds>(\x1b[m\x1b[K\n'}
+[1.593904] (mujoco) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.593929] (mujoco) StderrLine: {'line': b'\n'}
+[1.593951] (mujoco) StderrLine: {'line': b'   67 | \x1b[01;31m\x1b[K           "bucky/actuators_cmds", qos,\x1b[m\x1b[K\n'}
+[1.593973] (mujoco) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                            \n'}
+[1.593995] (mujoco) StderrLine: {'line': b'\n'}
+[1.594016] (mujoco) StderrLine: {'line': b'   68 | \x1b[01;31m\x1b[K           std::bind(&MuJoCoMessageHandler::actuator_cmd_callback, this,\x1b[m\x1b[K\n'}
+[1.594039] (mujoco) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.594061] (mujoco) StderrLine: {'line': b'\n'}
+[1.594081] (mujoco) StderrLine: {'line': b'   69 | \x1b[01;31m\x1b[K                     std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[1.594103] (mujoco) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                       \n'}
+[1.594123] (mujoco) StderrLine: {'line': b'\n'}
+[1.594144] (mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.594164] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.594186] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[1.594212] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7\x1b[m\x1b[K,\n'}
+[1.594233] (mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3\x1b[m\x1b[K:\n'}
+[1.594255] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:220:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.594282] (mujoco) StderrLine: {'line': b'  220 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[1.594302] (mujoco) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.594323] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:220:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.603615] (-) TimerEvent: {}
+[1.608140] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.608216] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.608247] (mujoco) StderrLine: {'line': b'   98 |       const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.608271] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.608293] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.608316] (mujoco) StderrLine: {'line': b'   98 | ::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.608338] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.608360] (mujoco) StderrLine: {'line': b'\n'}
+[1.617782] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.617862] (mujoco) StderrLine: {'line': b'   98 |       const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.617890] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.617914] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.617938] (mujoco) StderrLine: {'line': b'   98 | ::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.617967] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.617990] (mujoco) StderrLine: {'line': b'\n'}
+[1.627401] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.627483] (mujoco) StderrLine: {'line': b'   98 |       const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.627513] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.627537] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.627560] (mujoco) StderrLine: {'line': b'   98 | ::shared_ptr<communication::srv::SimulationReset::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[1.627583] (mujoco) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.627604] (mujoco) StderrLine: {'line': b'\n'}
+[1.627625] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[1.627647] (mujoco) StderrLine: {'line': b'   98 |       const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<communication::srv::SimulationReset::Request> request,\n'}
+[1.627669] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.637220] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.637326] (mujoco) StderrLine: {'line': b'   98 |       const std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Request> request,\n'}
+[1.637355] (mujoco) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.637379] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:97:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[Kreset_callback\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[1.637403] (mujoco) StderrLine: {'line': b'   97 |   void \x1b[01;31m\x1b[KMuJoCoMessageHandler\x1b[m\x1b[K::reset_callback(\n'}
+[1.637429] (mujoco) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.637451] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.637474] (mujoco) StderrLine: {'line': b'   98 |       \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<communication::srv::SimulationReset::Request> request,\n'}
+[1.637509] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.643616] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:99:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.643683] (mujoco) StderrLine: {'line': b'   99 |       std::shared_ptr<\x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::srv::SimulationReset::Response> response)\n'}
+[1.643711] (mujoco) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.643735] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:99:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.643758] (mujoco) StderrLine: {'line': b'   99 | shared_ptr<communication::srv::SimulationReset::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response)\n'}
+[1.643780] (mujoco) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.643810] (mujoco) StderrLine: {'line': b'\n'}
+[1.650642] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mujoco_ros2::MuJoCoMessageHandler::sim_time_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.650709] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:265:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.650737] (mujoco) StderrLine: {'line': b'  265 |     \x1b[01;31m\x1b[Klogger\x1b[m\x1b[K.spin_logging();\n'}
+[1.650761] (mujoco) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.651113] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mujoco_ros2::MuJoCoMessageHandler::contact_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.651181] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:327:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.651208] (mujoco) StderrLine: {'line': b'  327 |       \x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ContactForce contactForce;\n'}
+[1.651232] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.657797] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:328:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcontactForce\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmj_contactForce\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.657873] (mujoco) StderrLine: {'line': b'  328 |       \x1b[01;31m\x1b[KcontactForce\x1b[m\x1b[K.header.frame_id = &sim_->m->names[0]; // robot name\n'}
+[1.657902] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.657925] (mujoco) StderrLine: {'line': b'      |       \x1b[32m\x1b[Kmj_contactForce\x1b[m\x1b[K\n'}
+[1.677870] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:386:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.677969] (mujoco) StderrLine: {'line': b'  386 |       \x1b[01;31m\x1b[Kcontact_sensor_publisher_\x1b[m\x1b[K->publish(contactForce);\n'}
+[1.678009] (mujoco) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.683113] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.683175] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommunication\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.683205] (mujoco) StderrLine: {'line': b'  391 |       const \x1b[01;31m\x1b[Kcommunication\x1b[m\x1b[K::msg::ActuatorCmds::SharedPtr msg) const\n'}
+[1.683230] (mujoco) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.683254] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.683276] (mujoco) StderrLine: {'line': b'  391 |       const communication::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const\n'}
+[1.683298] (mujoco) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.683324] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.683347] (mujoco) StderrLine: {'line': b'  391 |       const communication::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const\n'}
+[1.683368] (mujoco) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.683389] (mujoco) StderrLine: {'line': b'      |                               \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.683411] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:390:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.683431] (mujoco) StderrLine: {'line': b'  390 |   void MuJoCoMessageHandler::actuator_cmd_callback\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[1.683452] (mujoco) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.683473] (mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.683494] (mujoco) StderrLine: {'line': b'  391 |       const communication::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KActuatorCmds::SharedPtr msg) const\n'}
+[1.683515] (mujoco) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.703794] (-) TimerEvent: {}
+[1.804119] (-) TimerEvent: {}
+[1.904434] (-) TimerEvent: {}
+[2.004702] (-) TimerEvent: {}
+[2.031149] (mujoco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simulation.dir/build.make:132: CMakeFiles/simulation.dir/src/main.cc.o] Error 1\n'}
+[2.031275] (mujoco) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.104791] (-) TimerEvent: {}
+[2.205019] (-) TimerEvent: {}
+[2.305242] (-) TimerEvent: {}
+[2.405567] (-) TimerEvent: {}
+[2.505889] (-) TimerEvent: {}
+[2.606197] (-) TimerEvent: {}
+[2.706444] (-) TimerEvent: {}
+[2.806717] (-) TimerEvent: {}
+[2.862234] (mujoco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simulation.dir/build.make:76: CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o] Error 1\n'}
+[2.862405] (mujoco) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulation.dir/all] Error 2\n'}
+[2.862745] (mujoco) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.864456] (mujoco) CommandEnded: {'returncode': 2}
+[2.906821] (-) TimerEvent: {}
+[2.974437] (mujoco) JobEnded: {'identifier': 'mujoco', 'rc': 2}
+[2.985019] (-) EventReactorShutdown: {}

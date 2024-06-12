@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(DynamicExpressionsLibrary)
+FILE(GLOB MySources "*.hh" "*.cc" ) 
+add_library(DynamicExpressions ${MySources})
+find_package(Eigen3 3.4 REQUIRED NO_MODULE)
+target_link_libraries(DynamicExpressions Eigen3::Eigen)

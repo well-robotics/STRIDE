@@ -1,0 +1,4 @@
+Invoking command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/install/mujoco
+Invoked command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco -DCMAKE_INSTALL_PREFIX=/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/install/mujoco
+Invoking command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24
+Invoked command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24

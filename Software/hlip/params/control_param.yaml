@@ -1,0 +1,51 @@
+# sim_controller:
+#   ros__parameters:
+#     # kp_hip:  2.   #4. #1.6 #0.8
+#     # kp_knee: 1.   #2.5 #1.2 #0.4
+#     # kd_hip:  .4   #2.5 #.2
+#     # kd_knee: .2  #0.2 #0.12
+#     kp_hip:  30.  #25.   #4. #1.6 #0.8
+#     kp_knee: 30. #25.   #2.5 #1.2 #0.4
+#     kd_hip:  0.2 #0.5   #2.5 #.2
+#     kd_knee: 0.2 #0.5 #0.2 #0.12
+#     pelvis_init_height: 0.450
+#     swing_height: 0.06
+#     TSSP: 0.4 # 0.35
+#     step_size: 0.1 # 0.2
+#     vdes: 0.25
+#     COM_height: 0.30 # 0.35
+
+#     com_height_test: 0.30
+#     x_swing_test: 0.
+#     z_swing_test: 0.0
+#     pitch_test: 0.
+
+# tuned using straight knee and straight footpad, Mar 22
+hardware_controller:
+  ros__parameters:
+    kp_hip:  15.
+    kp_knee: 15.
+    kd_hip:  0.1
+    kd_knee: 0.1
+    pelvis_init_height: 0.5
+    swing_height: 0.06
+    TSSP: 0.4
+    step_size: 0.08
+    vdes: 0.0
+    COM_height: 0.34
+    # com_height_test: 0.33
+    x_swing_test: 0.
+    z_swing_test: 0.0
+    pitch_test: 0.
+
+sim_hard_bridge:
+  ros__parameters:
+    kp_hip:  40.
+    kp_knee: 40.
+    kd_hip:  1.0 #0.6
+    kd_knee: 0.6 #0.6
+#### before adding gear ratio
+    # kp_hip:  50.  
+    # kp_knee: 50. 
+    # kd_hip:  1. #0.6
+    # kd_knee: 1. #0.6

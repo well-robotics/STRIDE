@@ -1,0 +1,487 @@
+[0.025s] Invoking command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco': CMAKE_PREFIX_PATH=/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target simulation[0m
+[0.076s] [ 12%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o[0m
+[0.077s] [ 25%] [32mBuilding CXX object CMakeFiles/simulation.dir/src/main.cc.o[0m
+[1.333s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/main.cc:23[m[K:
+[1.333s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/mujoco_sim_helper.hpp:12:19:[m[K [01;35m[Kwarning: [m[K‘[01m[KT_hold_in_air[m[K’ initialized and declared ‘[01m[Kextern[m[K’
+[1.333s]    12 |     extern double [01;35m[KT_hold_in_air[m[K = 1;
+[1.333s]       |                   [01;35m[K^~~~~~~~~~~~~[m[K
+[1.333s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/mujoco_sim_helper.hpp:13:19:[m[K [01;35m[Kwarning: [m[K‘[01m[KT_partial_release[m[K’ initialized and declared ‘[01m[Kextern[m[K’
+[1.333s]    13 |     extern double [01;35m[KT_partial_release[m[K = 1.5;
+[1.333s]       |                   [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[1.333s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/mujoco_sim_helper.hpp:14:19:[m[K [01;35m[Kwarning: [m[K‘[01m[KT_release_horizontal[m[K’ initialized and declared ‘[01m[Kextern[m[K’
+[1.333s]    14 |     extern double [01;35m[KT_release_horizontal[m[K = 2;
+[1.333s]       |                   [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.372s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/main.cc:24[m[K:
+[1.373s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[KData_Logger[m[K’ does not name a type
+[1.373s]    58 |         [01;31m[KData_Logger[m[K logger;
+[1.373s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[1.378s] In file included from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[1.378s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[KData_Logger[m[K’ does not name a type
+[1.378s]    58 |         [01;31m[KData_Logger[m[K logger;
+[1.378s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[1.382s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.382s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.382s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.383s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.383s]    68 |             const std::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.383s]       |                                                                               [01;31m[K^[m[K
+[1.388s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.388s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.388s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.388s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.388s]    68 | ::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.388s]       |                                                          [01;31m[K^[m[K
+[1.388s] 
+[1.392s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.392s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.392s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.392s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.392s]    68 |             const std::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.392s]       |                                                                               [01;31m[K^[m[K
+[1.397s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.397s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.397s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.397s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.397s]    68 | ::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.397s]       |                                                          [01;31m[K^[m[K
+[1.397s] 
+[1.402s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.402s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.402s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.402s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.402s]    68 |             const std::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.402s]       |                                                                               [01;31m[K^[m[K
+[1.402s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:19:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[1.402s]    68 |             const [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Request> request,
+[1.402s]       |                   [01;31m[K^~~[m[K
+[1.402s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ has not been declared
+[1.402s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.402s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.402s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:13:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[1.402s]    68 |             [01;31m[Kconst[m[K std::shared_ptr<communication::srv::SimulationReset::Request> request,
+[1.402s]       |             [01;31m[K^~~~~[m[K
+[1.407s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.407s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.407s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.407s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.407s]    68 | ::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.407s]       |                                                          [01;31m[K^[m[K
+[1.407s] 
+[1.407s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:19:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[1.407s]    68 |             const [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Request> request,
+[1.407s]       |                   [01;31m[K^~~[m[K
+[1.407s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ has not been declared
+[1.407s]    68 |             const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.407s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.407s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:68:13:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[1.407s]    68 |             [01;31m[Kconst[m[K std::shared_ptr<communication::srv::SimulationReset::Request> request,
+[1.407s]       |             [01;31m[K^~~~~[m[K
+[1.412s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.412s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.412s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.412s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.412s]    69 |             std::shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response
+[1.412s]       |                                                                          [01;31m[K^[m[K
+[1.416s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.417s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.417s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.417s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.417s]    69 | :shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response
+[1.417s]       |                                                          [01;31m[K^[m[K
+[1.417s] 
+[1.421s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.422s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.422s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.422s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.422s]    69 |             std::shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response
+[1.422s]       |                                                                          [01;31m[K^[m[K
+[1.426s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.426s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.426s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.426s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.426s]    69 | :shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response
+[1.426s]       |                                                          [01;31m[K^[m[K
+[1.426s] 
+[1.432s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.432s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.432s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.432s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.432s]    69 |             std::shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response
+[1.432s]       |                                                                          [01;31m[K^[m[K
+[1.432s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[1.432s]    69 |             [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Response> response
+[1.432s]       |             [01;31m[K^~~[m[K
+[1.432s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ has not been declared
+[1.432s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.432s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.432s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[1.432s]    69 |             [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Response> response
+[1.432s]       |             [01;31m[K^~~[m[K
+[1.436s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.436s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.436s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.436s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.436s]    69 | :shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response
+[1.436s]       |                                                          [01;31m[K^[m[K
+[1.436s] 
+[1.436s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[1.436s]    69 |             [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Response> response
+[1.436s]       |             [01;31m[K^~~[m[K
+[1.436s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ has not been declared
+[1.436s]    69 |             std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response
+[1.436s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.436s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:69:13:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[1.436s]    69 |             [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Response> response
+[1.436s]       |             [01;31m[K^~~[m[K
+[1.437s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ does not name a type
+[1.437s]    85 |             const [01;31m[Kcommunication[m[K::msg::ActuatorCmds::SharedPtr msg) const;
+[1.437s]       |                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.437s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.437s]    85 |             const communication::msg[01;31m[K::[m[KActuatorCmds::SharedPtr msg) const;
+[1.437s]       |                                     [01;31m[K^~[m[K
+[1.437s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.437s]    85 |             const communication::msg[01;31m[K:[m[K[32m[K:[m[KActuatorCmds::SharedPtr msg) const;
+[1.437s]       |                                     [01;31m[K^[m[K[32m[K~[m[K
+[1.437s]       |                                     [32m[K)[m[K
+[1.437s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:84:35:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.437s]    84 |         void actuator_cmd_callback[01;36m[K([m[K
+[1.437s]       |                                   [01;36m[K^[m[K
+[1.437s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.437s]    85 |             const communication::[01;31m[Kmsg[m[K::ActuatorCmds::SharedPtr msg) const;
+[1.437s]       |                                  [01;31m[K^~~[m[K
+[1.437s]       |                                     [32m[K;[m[K
+[1.440s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:39:[m[K [01;31m[Kerror: [m[K‘[01m[KActuatorCmds[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[1.440s]    85 |             const communication::msg::[01;31m[KActuatorCmds[m[K::SharedPtr msg) const;
+[1.440s]       |                                       [01;31m[K^~~~~~~~~~~~[m[K
+[1.441s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ does not name a type
+[1.441s]    85 |             const [01;31m[Kcommunication[m[K::msg::ActuatorCmds::SharedPtr msg) const;
+[1.441s]       |                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.441s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.441s]    85 |             const communication::msg[01;31m[K::[m[KActuatorCmds::SharedPtr msg) const;
+[1.441s]       |                                     [01;31m[K^~[m[K
+[1.441s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.441s]    85 |             const communication::msg[01;31m[K:[m[K[32m[K:[m[KActuatorCmds::SharedPtr msg) const;
+[1.441s]       |                                     [01;31m[K^[m[K[32m[K~[m[K
+[1.441s]       |                                     [32m[K)[m[K
+[1.441s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:84:35:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.441s]    84 |         void actuator_cmd_callback[01;36m[K([m[K
+[1.441s]       |                                   [01;36m[K^[m[K
+[1.441s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.441s]    85 |             const communication::[01;31m[Kmsg[m[K::ActuatorCmds::SharedPtr msg) const;
+[1.441s]       |                                  [01;31m[K^~~[m[K
+[1.441s]       |                                     [32m[K;[m[K
+[1.444s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:85:39:[m[K [01;31m[Kerror: [m[K‘[01m[KActuatorCmds[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[1.444s]    85 |             const communication::msg::[01;31m[KActuatorCmds[m[K::SharedPtr msg) const;
+[1.444s]       |                                       [01;31m[K^~~~~~~~~~~~[m[K
+[1.456s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.456s]   108 |         rclcpp::Publisher<[01;31m[Kcommunication[m[K::msg::ContactForce>::SharedPtr
+[1.456s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.456s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.456s]   108 |         rclcpp::Publisher<communication::msg::ContactForce[01;31m[K>[m[K::SharedPtr
+[1.456s]       |                                                           [01;31m[K^[m[K
+[1.456s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.456s]   108 |         rclcpp::Publisher<communication::msg::ContactForce>::[01;31m[KSharedPtr[m[K
+[1.456s]       |                                                              [01;31m[K^~~~~~~~~[m[K
+[1.456s]       |                                                                       [32m[K;[m[K
+[1.460s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.460s]   108 |         rclcpp::Publisher<[01;31m[Kcommunication[m[K::msg::ContactForce>::SharedPtr
+[1.460s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.460s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.460s]   108 |       rclcpp::Publisher<communication::msg::ContactForce[01;31m[K>[m[K::SharedPtr
+[1.460s]       |                                                         [01;31m[K^[m[K
+[1.460s] 
+[1.460s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.460s]   108 |      rclcpp::Publisher<communication::msg::ContactForce>::[01;31m[KSharedPtr[m[K
+[1.460s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[1.460s]       |                                                                    [32m[K;[m[K
+[1.470s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:109:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontact_sensor_publisher_[m[K’ does not name a type
+[1.470s]   109 |             [01;31m[Kcontact_sensor_publisher_[m[K;
+[1.470s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.474s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:109:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontact_sensor_publisher_[m[K’ does not name a type
+[1.474s]   109 |             [01;31m[Kcontact_sensor_publisher_[m[K;
+[1.474s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.482s]   114 |         rclcpp::Subscription<[01;31m[Kcommunication[m[K::msg::ActuatorCmds>::SharedPtr
+[1.482s]       |                              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.482s]   114 |         rclcpp::Subscription<communication::msg::ActuatorCmds[01;31m[K>[m[K::SharedPtr
+[1.482s]       |                                                              [01;31m[K^[m[K
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.482s]   114 |         rclcpp::Subscription<communication::msg::ActuatorCmds>::[01;31m[KSharedPtr[m[K
+[1.482s]       |                                                                 [01;31m[K^~~~~~~~~[m[K
+[1.482s]       |                                                                          [32m[K;[m[K
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.482s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.482s]   108 |         rclcpp::Publisher<communication::msg::ContactForce>::[01;36m[KSharedPtr[m[K
+[1.482s]       |                                                              [01;36m[K^~~~~~~~~[m[K
+[1.485s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.485s]   114 |         rclcpp::Subscription<[01;31m[Kcommunication[m[K::msg::ActuatorCmds>::SharedPtr
+[1.485s]       |                              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.485s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.486s]   114 |    rclcpp::Subscription<communication::msg::ActuatorCmds[01;31m[K>[m[K::SharedPtr
+[1.486s]       |                                                         [01;31m[K^[m[K
+[1.486s] 
+[1.486s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.486s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[1.486s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[1.486s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.486s]   114 |   rclcpp::Subscription<communication::msg::ActuatorCmds>::[01;31m[KSharedPtr[m[K
+[1.486s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[1.486s]       |                                                                    [32m[K;[m[K
+[1.486s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:114:65:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.486s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.486s]   108 |      rclcpp::Publisher<communication::msg::ContactForce>::[01;36m[KSharedPtr[m[K
+[1.486s]       |                                                           [01;36m[K^~~~~~~~~[m[K
+[1.486s] 
+[1.495s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:115:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kactuator_cmd_subscription_[m[K’ does not name a type
+[1.495s]   115 |             [01;31m[Kactuator_cmd_subscription_[m[K;
+[1.495s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.499s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:115:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kactuator_cmd_subscription_[m[K’ does not name a type
+[1.499s]   115 |             [01;31m[Kactuator_cmd_subscription_[m[K;
+[1.499s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.505s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.505s]   117 |         rclcpp::Service<[01;31m[Kcommunication[m[K::srv::SimulationReset>::SharedPtr
+[1.505s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[1.505s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.505s]   117 |         rclcpp::Service<communication::srv::SimulationReset[01;31m[K>[m[K::SharedPtr
+[1.505s]       |                                                            [01;31m[K^[m[K
+[1.505s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.505s]   117 |         rclcpp::Service<communication::srv::SimulationReset>::[01;31m[KSharedPtr[m[K
+[1.505s]       |                                                               [01;31m[K^~~~~~~~~[m[K
+[1.505s]       |                                                                        [32m[K;[m[K
+[1.505s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.505s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.505s]   108 |         rclcpp::Publisher<communication::msg::ContactForce>::[01;36m[KSharedPtr[m[K
+[1.505s]       |                                                              [01;36m[K^~~~~~~~~[m[K
+[1.509s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.509s]   117 |         rclcpp::Service<[01;31m[Kcommunication[m[K::srv::SimulationReset>::SharedPtr
+[1.509s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[1.509s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.509s]   117 |      rclcpp::Service<communication::srv::SimulationReset[01;31m[K>[m[K::SharedPtr
+[1.509s]       |                                                         [01;31m[K^[m[K
+[1.509s] 
+[1.509s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.509s]   117 |     rclcpp::Service<communication::srv::SimulationReset>::[01;31m[KSharedPtr[m[K
+[1.509s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[1.509s]       |                                                                    [32m[K;[m[K
+[1.509s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:117:63:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.509s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:108:62:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint mujoco_ros2::MuJoCoMessageHandler::SharedPtr[m[K’
+[1.509s]   108 |      rclcpp::Publisher<communication::msg::ContactForce>::[01;36m[KSharedPtr[m[K
+[1.509s]       |                                                           [01;36m[K^~~~~~~~~[m[K
+[1.509s] 
+[1.509s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:118:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kreset_service_[m[K’ does not name a type
+[1.509s]   118 |             [01;31m[Kreset_service_[m[K;
+[1.509s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.513s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:118:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kreset_service_[m[K’ does not name a type
+[1.513s]   118 |             [01;31m[Kreset_service_[m[K;
+[1.513s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.517s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:[m[K In member function ‘[01m[Kvoid mujoco_ros2::MuJoCoMessageHandler::init_logging()[m[K’:
+[1.517s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:62:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger[m[K’ was not declared in this scope
+[1.517s]    62 |             [01;31m[Klogger[m[K.init("mujocoSim");
+[1.517s]       |             [01;31m[K^~~~~~[m[K
+[1.521s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:[m[K In member function ‘[01m[Kvoid mujoco_ros2::MuJoCoMessageHandler::init_logging()[m[K’:
+[1.521s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:62:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger[m[K’ was not declared in this scope
+[1.521s]    62 |             [01;31m[Klogger[m[K.init("mujocoSim");
+[1.521s]       |             [01;31m[K^~~~~~[m[K
+[1.530s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:[m[K In constructor ‘[01m[Kmujoco_ros2::MuJoCoMessageHandler::MuJoCoMessageHandler(mujoco::Simulate*)[m[K’:
+[1.530s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreset_service_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_service[m[K’?
+[1.530s]    18 |     [01;31m[Kreset_service_[m[K = this->create_service<communication::srv::SimulationReset>(
+[1.530s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.531s]       |     [32m[Kcreate_service[m[K
+[1.540s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.540s]    18 |     reset_service_ = this->create_service<[01;31m[Kcommunication[m[K::srv::SimulationReset>(
+[1.540s]       |                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.540s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.541s]    18 |     reset_service_ = this->[01;31m[Kcreate_service<communication::srv::SimulationReset>[m[K(
+[1.541s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.544s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:79:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmujoco_ros2::MuJoCoMessageHandler::create_service<<expression error> >(std::__cxx11::basic_string<char>, std::_Bind_helper<false, void (mujoco_ros2::MuJoCoMessageHandler::*)(...), mujoco_ros2::MuJoCoMessageHandler*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+[1.544s]    18 | rvice_ = [01;31m[Kthis->create_service<communication::srv::SimulationReset>([m[K
+[1.544s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.544s] 
+[1.544s]    19 | [01;31m[K_prefix + "sim_reset",[m[K
+[1.544s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                             
+[1.544s] 
+[1.544s]    20 | [01;31m[K:bind(&MuJoCoMessageHandler::reset_callback, this,[m[K
+[1.544s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                 
+[1.544s] 
+[1.544s]    21 | [01;31m[K      std::placeholders::_1, std::placeholders::_2))[m[K;
+[1.544s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K               
+[1.544s] 
+[1.544s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.544s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.544s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[1.544s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7[m[K,
+[1.544s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[1.544s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:299:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[1.544s]   299 |   [01;36m[Kcreate_service[m[K(
+[1.544s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.544s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:299:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.544s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.544s]    18 | rvice_ = [01;31m[Kthis->create_service<communication::srv::SimulationReset>([m[K
+[1.544s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.544s] 
+[1.544s]    19 | [01;31m[K_prefix + "sim_reset",[m[K
+[1.544s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                             
+[1.544s] 
+[1.544s]    20 | [01;31m[K:bind(&MuJoCoMessageHandler::reset_callback, this,[m[K
+[1.544s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                 
+[1.544s] 
+[1.544s]    21 | [01;31m[K      std::placeholders::_1, std::placeholders::_2))[m[K;
+[1.545s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K               
+[1.545s] 
+[1.545s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.545s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.545s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[1.545s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7[m[K,
+[1.545s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[1.545s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:315:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rclcpp::QoS&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[1.545s]   315 |   [01;36m[Kcreate_service[m[K(
+[1.545s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.545s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:315:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.545s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:18:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.545s]    18 | rvice_ = [01;31m[Kthis->create_service<communication::srv::SimulationReset>([m[K
+[1.545s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.545s] 
+[1.545s]    19 | [01;31m[K_prefix + "sim_reset",[m[K
+[1.545s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                             
+[1.545s] 
+[1.545s]    20 | [01;31m[K:bind(&MuJoCoMessageHandler::reset_callback, this,[m[K
+[1.545s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                 
+[1.545s] 
+[1.545s]    21 | [01;31m[K      std::placeholders::_1, std::placeholders::_2))[m[K;
+[1.545s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K               
+[1.545s] 
+[1.565s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontact_sensor_publisher_[m[K’ was not declared in this scope
+[1.565s]    32 |     [01;31m[Kcontact_sensor_publisher_[m[K = this->create_publisher<communication::msg::ContactForce>(
+[1.565s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.565s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:32:39:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.565s]    32 |     contact_sensor_publisher_ = this->[01;31m[Kcreate_publisher<communication::msg::ContactForce>[m[K(
+[1.565s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.565s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:32:89:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmujoco_ros2::MuJoCoMessageHandler::create_publisher<communication>(std::__cxx11::basic_string<char>, rclcpp::QoS&)[m[K’
+[1.566s]    32 | lisher_ = [01;31m[Kthis->create_publisher<communication::msg::ContactForce>([m[K
+[1.566s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.566s] 
+[1.566s]    33 | [01;31m[K"contact_states", qos)[m[K;
+[1.566s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                             
+[1.566s] 
+[1.566s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:1611[m[K,
+[1.566s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.566s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.566s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[1.566s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7[m[K,
+[1.566s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[1.566s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.566s]    73 | [01;36m[KNode[m[K::create_publisher(
+[1.566s]       | [01;36m[K^~~~[m[K
+[1.566s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.592s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kactuator_cmd_subscription_[m[K’ was not declared in this scope
+[1.592s]    65 |     [01;31m[Kactuator_cmd_subscription_[m[K =
+[1.592s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.592s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:66:15:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.592s]    66 |         this->[01;31m[Kcreate_subscription<communication::msg::ActuatorCmds>[m[K(
+[1.592s]       |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.593s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:66:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmujoco_ros2::MuJoCoMessageHandler::create_subscription<communication>(const char [21], rclcpp::QoS&, std::_Bind_helper<false, void (mujoco_ros2::MuJoCoMessageHandler::*)(...), mujoco_ros2::MuJoCoMessageHandler*, const std::_Placeholder<1>&>::type)[m[K’
+[1.593s]    66 |        [01;31m[Kthis->create_subscription<communication::msg::ActuatorCmds>([m[K
+[1.593s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.593s] 
+[1.594s]    67 | [01;31m[K           "bucky/actuators_cmds", qos,[m[K
+[1.594s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                            
+[1.594s] 
+[1.594s]    68 | [01;31m[K           std::bind(&MuJoCoMessageHandler::actuator_cmd_callback, this,[m[K
+[1.594s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.594s] 
+[1.594s]    69 | [01;31m[K                     std::placeholders::_1))[m[K;
+[1.594s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+[1.594s] 
+[1.594s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.594s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.594s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[1.594s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/include/MuJoCoMessageHandler.h:7[m[K,
+[1.594s]                  from [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:3[m[K:
+[1.594s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:220:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.594s]   220 |   [01;36m[Kcreate_subscription[m[K(
+[1.594s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.594s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:220:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.608s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:[m[K At global scope:
+[1.608s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.608s]    98 |       const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.608s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.608s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.608s]    98 | ::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.608s]       |                                                          [01;31m[K^[m[K
+[1.608s] 
+[1.617s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.617s]    98 |       const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.617s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.617s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.618s]    98 | ::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.618s]       |                                                          [01;31m[K^[m[K
+[1.618s] 
+[1.627s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.627s]    98 |       const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.627s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.627s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.627s]    98 | ::shared_ptr<communication::srv::SimulationReset::Request[01;31m[K>[m[K request,
+[1.627s]       |                                                          [01;31m[K^[m[K
+[1.627s] 
+[1.627s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[1.627s]    98 |       const [01;31m[Kstd[m[K::shared_ptr<communication::srv::SimulationReset::Request> request,
+[1.627s]       |             [01;31m[K^~~[m[K
+[1.637s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.637s]    98 |       const std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Request> request,
+[1.637s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.637s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:97:8:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kreset_callback[m[K’ declared void
+[1.637s]    97 |   void [01;31m[KMuJoCoMessageHandler[m[K::reset_callback(
+[1.637s]       |        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.637s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:98:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[1.637s]    98 |       [01;31m[Kconst[m[K std::shared_ptr<communication::srv::SimulationReset::Request> request,
+[1.637s]       |       [01;31m[K^~~~~[m[K
+[1.643s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:99:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ was not declared in this scope
+[1.643s]    99 |       std::shared_ptr<[01;31m[Kcommunication[m[K::srv::SimulationReset::Response> response)
+[1.643s]       |                       [01;31m[K^~~~~~~~~~~~~[m[K
+[1.643s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:99:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.643s]    99 | shared_ptr<communication::srv::SimulationReset::Response[01;31m[K>[m[K response)
+[1.643s]       |                                                         [01;31m[K^[m[K
+[1.643s] 
+[1.650s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:[m[K In member function ‘[01m[Kvoid mujoco_ros2::MuJoCoMessageHandler::sim_time_callback()[m[K’:
+[1.650s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:265:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger[m[K’ was not declared in this scope
+[1.650s]   265 |     [01;31m[Klogger[m[K.spin_logging();
+[1.650s]       |     [01;31m[K^~~~~~[m[K
+[1.651s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:[m[K In member function ‘[01m[Kvoid mujoco_ros2::MuJoCoMessageHandler::contact_callback()[m[K’:
+[1.651s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:327:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ has not been declared
+[1.651s]   327 |       [01;31m[Kcommunication[m[K::msg::ContactForce contactForce;
+[1.651s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[1.657s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:328:7:[m[K [01;31m[Kerror: [m[K‘[01m[KcontactForce[m[K’ was not declared in this scope; did you mean ‘[01m[Kmj_contactForce[m[K’?
+[1.657s]   328 |       [01;31m[KcontactForce[m[K.header.frame_id = &sim_->m->names[0]; // robot name
+[1.657s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[1.657s]       |       [32m[Kmj_contactForce[m[K
+[1.677s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:386:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontact_sensor_publisher_[m[K’ was not declared in this scope
+[1.678s]   386 |       [01;31m[Kcontact_sensor_publisher_[m[K->publish(contactForce);
+[1.678s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.683s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:[m[K At global scope:
+[1.683s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommunication[m[K’ does not name a type
+[1.683s]   391 |       const [01;31m[Kcommunication[m[K::msg::ActuatorCmds::SharedPtr msg) const
+[1.683s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[1.683s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:31:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.683s]   391 |       const communication::msg[01;31m[K::[m[KActuatorCmds::SharedPtr msg) const
+[1.683s]       |                               [01;31m[K^~[m[K
+[1.683s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.683s]   391 |       const communication::msg[01;31m[K:[m[K[32m[K:[m[KActuatorCmds::SharedPtr msg) const
+[1.683s]       |                               [01;31m[K^[m[K[32m[K~[m[K
+[1.683s]       |                               [32m[K)[m[K
+[1.683s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:390:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.683s]   390 |   void MuJoCoMessageHandler::actuator_cmd_callback[01;36m[K([m[K
+[1.683s]       |                                                   [01;36m[K^[m[K
+[1.683s] [01m[K/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/src/MuJoCoMessageHandler.cpp:391:31:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[1.683s]   391 |       const communication::msg[01;31m[K::[m[KActuatorCmds::SharedPtr msg) const
+[1.683s]       |                               [01;31m[K^~[m[K
+[2.031s] gmake[2]: *** [CMakeFiles/simulation.dir/build.make:132: CMakeFiles/simulation.dir/src/main.cc.o] Error 1
+[2.031s] gmake[2]: *** Waiting for unfinished jobs....
+[2.862s] gmake[2]: *** [CMakeFiles/simulation.dir/build.make:76: CMakeFiles/simulation.dir/src/MuJoCoMessageHandler.cpp.o] Error 1
+[2.862s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulation.dir/all] Error 2
+[2.862s] gmake: *** [Makefile:146: all] Error 2
+[2.864s] Invoked command in '/home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/welllab/Yicheng-Zeng/BUCKY_RL/mujoco/build/mujoco -- -j24 -l24
