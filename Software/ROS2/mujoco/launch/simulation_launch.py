@@ -11,7 +11,7 @@ def generate_launch_description():
     hardware_xml_file = os.path.join(get_package_share_path("description"), hardware_xml_file_name)
 
     control_yaml_file_name = "params/control_param.yaml"
-    control_yaml_file = os.path.join(get_package_share_path("hlip"), control_yaml_file_name)
+    control_yaml_file = os.path.join(get_package_share_path("controller"), control_yaml_file_name)
     
     return LaunchDescription([
         Node(
@@ -24,16 +24,16 @@ def generate_launch_description():
             prefix="nice -n -19 taskset -c 1",
             ),
         Node(
-            package = "hlip",
-            executable="hardware_controller",
-            name = "hardware_controller",
+            package = "controller",
+            executable="S2S_controller",
+            name = "S2S_controller",
             prefix="nice -n -19 taskset -c 4",
             output = "screen",
             emulate_tty=True, # maybe useful for setting parameters here.
             parameters=[control_yaml_file] 
         ),
         Node(
-            package = "hlip",
+            package = "controller",
             executable="sim_hard_bridge",
             name = "sim_hard_bridge",
             prefix="nice -n -19 taskset -c 3",

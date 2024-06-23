@@ -83,8 +83,8 @@
             <body name="right_contact_sensor" pos="-.00250 -0.0232 -0.24714861">
                 <inertial pos="0 0 0" mass="1e-6" diaginertia="1e-15 1e-15 1e-15" />
                 <!-- <geom name="right_contact_semisphere" type="sphere" pos="0 0 0" size="0.01620" rgba="0 1 0 0.1" class="collision-right"/> -->
-                <geom name="right_contact_semisphere" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0 1 0 0.0" friction="1.5 0.5 0.5" class="collision-right" />
-                <site name="right_contact_sensor" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0.1 0.7 0.2 0.0" />
+                <geom name="right_contact_semisphere" type="cylinder" pos="0 0 0" size="0.03 0.006" zaxis="0 1 0" rgba="0 1 0 0.0" friction="1.5 0.5 0.5" class="collision-right" />
+                <site name="right_contact_sensor" type="cylinder" pos="0 0 0" size="0.03 0.006" zaxis="0 1 0" rgba="0.1 0.7 0.2 0.0" />
             </body> 
         </body>
       </body>
@@ -100,8 +100,8 @@
           <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="left_shin"/>
             <body name="left_contact_sensor" pos="-0.00250 0.0232 -0.24714861">
                 <inertial pos="0 0 0" mass="1e-6" diaginertia="1e-15 1e-15 1e-15" />
-                <geom name="left_contact_semisphere" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0 1 0 0.0" friction="1.5 0.5 0.5" class="collision-left"/>
-                <site name="left_contact_sensor" type="cylinder" pos="0 0 0" size="0.040 0.006" zaxis="0 1 0" rgba="0.1 0.7 0.2 0.0" />
+                <geom name="left_contact_semisphere" type="cylinder" pos="0 0 0" size="0.03 0.006" zaxis="0 1 0" rgba="0 1 0 0.0" friction="1.5 0.5 0.5" class="collision-left"/>
+                <site name="left_contact_sensor" type="cylinder" pos="0 0 0" size="0.03 0.006" zaxis="0 1 0" rgba="0.1 0.7 0.2 0.0" />
             </body> 
         </body>
     </body>

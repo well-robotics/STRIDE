@@ -2,7 +2,6 @@
 #define HLIP_HPP
 
 #include "Eigen/Dense"
-#include "LIP.hpp" 
 
 using namespace Eigen;
 enum orbit_type {P1= 1, P2= 2};  // 1 for P1 orbit, 2 for P2 orbit

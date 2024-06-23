@@ -91,8 +91,7 @@ void HLIP::HLIP_orbital_slope(){
 }
 void HLIP::HLIP_P1_step(){
     HLIP_orbital_slope(); 
-    // step_size_es is unused, why?
-    // double step_size_es = this->vdes*(this->TSSP+this->TDSP);  // step_size = step_size_es? constraint v_dT = u^*
+    // double step_size_es = this->vdes*(this->TSSP+this->TDSP);  // step_size v_dT = u*
     this->HLIP_final_state(0) = step_size/(2+this->TDSP*this->P1_orbital_slope); 
     this->HLIP_final_state(1) = this->HLIP_final_state(0)*this->P1_orbital_slope; 
 }
@@ -117,14 +116,14 @@ void HLIP::HLIP_P1_get_step_size(Vector2d state_real){
     // HLIP_deadbeat_gain(); 
     this->step_real = this->step_size + this->Kdeadbeat.dot((state_real - this->HLIP_final_state));
     // map step with respect to boom length to maintain speed linear velocity
-    if(this->HLIP_stance_leg == right_leg){
-        // left foot swing
-        this->step_real = (1378.0/1500)*this->step_real;
-    }
-    else if (this->HLIP_stance_leg == left_leg){
-        // right foot swing
-        this->step_real = (1622.0/1500)*this->step_real; 
-    }
+    // if(this->HLIP_stance_leg == right_leg){
+    //     // left foot swing
+    //     this->step_real = (1378.0/1500)*this->step_real;
+    // }
+    // else if (this->HLIP_stance_leg == left_leg){
+    //     // right foot swing
+    //     this->step_real = (1622.0/1500)*this->step_real; 
+    // }
     std::cerr << "step size:" << this->step_real << "=" 
     << this->step_size << "+["<<this->Kdeadbeat(0) << "," << this->Kdeadbeat(1)
     << "] * [(" << state_real(0) << "-" << this->HLIP_final_state(0) <<"), "

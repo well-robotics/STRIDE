@@ -5,7 +5,7 @@
 #include "Eigen/Sparse" 
 #include "unsupported/Eigen/MatrixFunctions"
 #include "HLIP.hpp"
-#include "FiveLinkWalker_HLIP.hpp"
+#include "output_controller.hpp"
 #include "IK_newton.hpp" 
 #include "Expressions/COMPosition.hh"
 #include "Expressions/COM_velocity.hh"
@@ -26,25 +26,25 @@ using namespace bezier_tools;
 using namespace SymFunction; 
 
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_initialize(orbit_type orbit, double vdes, double COM_height, double TSSP, double TDSP, double step_size, double swing_height, double torso_angle){
+void output_controller::output_controller_initialize(orbit_type orbit, double vdes, double COM_height, double TSSP, double TDSP, double step_size, double swing_height, double torso_angle){
     // update this function to satisfy the inheritence 
     HLIP_initialization(orbit, COM_height, TSSP, TDSP, vdes, step_size); 
     this->swing_height = swing_height;
     this->torso_angle = torso_angle; 
     this->HLIP_stance_leg = right_leg; 
-    this->FiveLinkWalker_HLIP_IK_solver.initialize("DesJointPosition", 5, 5, 1e-8, 8, false);  // 1e-8 8
-    this->FiveLinkWalker_HLIP_IK_solver.J_fun_pointer = [this](VectorXd q)
+    this->output_controller_IK_solver.initialize("DesJointPosition", 5, 5, 1e-8, 8, false);  // 1e-8 8
+    this->output_controller_IK_solver.J_fun_pointer = [this](VectorXd q)
     {
-        return this->FiveLinkWalker_HLIP_J_output(q); 
+        return this->output_controller_J_output(q); 
     }; 
-    this->FiveLinkWalker_HLIP_IK_solver.y_fun_pointer = [this](VectorXd q)
+    this->output_controller_IK_solver.y_fun_pointer = [this](VectorXd q)
     {
-        return this->FiveLinkWalker_HLIP_y_output(q); 
+        return this->output_controller_y_output(q); 
     };  
 }
 
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_renew(VectorXd state_q_real, VectorXd state_dq_real, VectorXd output_state_real, VectorXd doutput_state_real, stance_leg stance_leg_input, Vector2d COM_state,double time_now){
+void output_controller::output_controller_renew(VectorXd state_q_real, VectorXd state_dq_real, VectorXd output_state_real, VectorXd doutput_state_real, stance_leg stance_leg_input, Vector2d COM_state,double time_now){
     // this function renews the states of the robot required for generating control signals
     // 1. determine whether the stance leg changes
     if (stance_leg_input != this->HLIP_stance_leg ){
@@ -98,7 +98,7 @@ void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_renew(VectorXd state_q_real, Vecto
 
 }
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_swing_foot_z(){
+void output_controller::output_controller_swing_foot_z(){
     // this function calculates the desired swing foot z position at specific time t during ssp 
     // Input 
     // 1. start_swing_z position, 
@@ -116,7 +116,7 @@ void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_swing_foot_z(){
 }
 // overload swing_foot_z to get entire trajectory from lift off to touch down
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_swing_foot_x(){
+void output_controller::output_controller_swing_foot_x(){
     // this function calculates the desired swing foot x position at specific time t during ssp
     // Input
     // 1. step length
@@ -136,7 +136,7 @@ void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_swing_foot_x(){
     this->bezier_swing_foot_dx = -dbht*this->SSP_output_start(1) + dbht*this->step_real+ bht*this->vdes;                                                       
 }
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_COM_z(){
+void output_controller::output_controller_COM_z(){
     // this function calculates the desired swing foot z position at specific time t during ssp
     // Input
     // 1. swing height
@@ -153,7 +153,7 @@ void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_COM_z(){
     this-> bezier_COM_dz = -dbht*(this->SSP_output_start(0) - this->SSP_output_start(2) )+dbht*this->COM_height;    
 }
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_COM_x(){
+void output_controller::output_controller_COM_x(){
     // this function plans the desired COM-X trajectory
     // it is only used for IK
 
@@ -178,16 +178,16 @@ void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_COM_x(){
 
 }
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_plan_desired(){
-    FiveLinkWalker_HLIP_swing_foot_x(); 
-    FiveLinkWalker_HLIP_swing_foot_z();
-    FiveLinkWalker_HLIP_COM_z();
-    FiveLinkWalker_HLIP_COM_x();
+void output_controller::output_controller_plan_desired(){
+    output_controller_swing_foot_x(); 
+    output_controller_swing_foot_z();
+    output_controller_COM_z();
+    output_controller_COM_x();
     this->SSP_output_des <<  this->bezier_COM_z,this->bezier_swing_foot_x,this->bezier_swing_foot_z,this->torso_angle; 
     this->SSP_output_vdes<<  this->bezier_COM_dz,this->bezier_swing_foot_dx,this->bezier_swing_foot_dz,0;
 }   
 
-void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_IK(){
+void output_controller::output_controller_IK(){
     // call solve_from_current method of IK to get the desired joint q 
     // three input variables to pro's code 
     // 1. q is the initial guess
@@ -200,11 +200,11 @@ void FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_IK(){
     ////////// use predefined values as input
     y_des << this->COM_x_real(0), this->SSP_output_des ;// 
     dy_des << this->COM_x_real(1), this->SSP_output_vdes;// 
-    this->FiveLinkWalker_HLIP_IK_solver.solve_from_current(this->own_q, y_des, dy_des);
+    this->output_controller_IK_solver.solve_from_current(this->own_q, y_des, dy_des);
 }
 
 //NOTICE THAT BOTH J AND Y FUNCTI0N CALCULATES THE relative output
-MatrixXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_J_output(VectorXd q){ // q should be a 5x1 self_coord state
+MatrixXd output_controller::output_controller_J_output(VectorXd q){ // q should be a 5x1 self_coord state
     // this function calculates the Jacobian matrix of output y
     // 1.x-com 2.z-com 3.x-sw 4. z-sw 5.pitch-pelvis  
     // combine the third row of J_COM,  J_Toe, J_pelvis_ori
@@ -234,7 +234,7 @@ MatrixXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_J_output(VectorXd q){ // q sho
     return J_output; 
 }
 
-MatrixXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_y_output(VectorXd q){
+MatrixXd output_controller::output_controller_y_output(VectorXd q){
     // 1.x-com 2.z-com 3.x-sw 4. z-sw 5.pitch-pelvis  
     // combine the third row of COMPosition,  toe, pelvis_ori
     VectorXd q_all = VectorXd::Zero(7) ;
@@ -263,7 +263,7 @@ MatrixXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_y_output(VectorXd q){
     return output; 
 }
 
-void FiveLinkWalker_HLIP::Log2txt(const MatrixXd matrix, std::string filename)
+void output_controller::Log2txt(const MatrixXd matrix, std::string filename)
 {
     IOFormat CleanFmt(20, 0, ", ", "\n", "[", "]");
     std::string path = "/home//log_txt/";
@@ -272,11 +272,11 @@ void FiveLinkWalker_HLIP::Log2txt(const MatrixXd matrix, std::string filename)
     outfile.close();
 }
 
-VectorXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_output_PD(VectorXd q_real, VectorXd dotq_real, VectorXd q_des, VectorXd dotq_des, MatrixXd Jacob, MatrixXd K_p, MatrixXd K_d){
+VectorXd output_controller::output_controller_output_PD(VectorXd q_real, VectorXd dotq_real, VectorXd q_des, VectorXd dotq_des, MatrixXd Jacob, MatrixXd K_p, MatrixXd K_d){
     return Jacob.transpose()*(K_p*(q_real - q_des)+K_d*(dotq_real - dotq_des)); 
 }
 
-MatrixXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_construct_J(VectorXd q){
+MatrixXd output_controller::output_controller_construct_J(VectorXd q){
     // This function calculates the Jacobian needed for output PD
     // Input: 1*7 state vector
     // Output: 4*4 matrix
@@ -304,7 +304,7 @@ MatrixXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_construct_J(VectorXd q){
     return J_output; 
 }
 
-VectorXd FiveLinkWalker_HLIP::FiveLinkWalker_HLIP_gravity_compensation(VectorXd q){
+VectorXd output_controller::output_controller_gravity_compensation(VectorXd q){
     // This methods computes torque outputs for compensating gravity
     // Input: 7x1 state 
     // output: 4x1 torque

@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "hardware_controller.hpp"
+#include "S2S_controller.hpp"
 #include <nav_msgs/msg/odometry.hpp>
 
 using std::placeholders::_1;

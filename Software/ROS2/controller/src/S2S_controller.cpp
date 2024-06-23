@@ -1,6 +1,6 @@
 ////TODO: switch odom to boom imu reading
 //// always treat z as -contact(z)
-#include <hardware_controller.hpp>
+#include <S2S_controller.hpp>
 
 // This code realized the controller for planar bipedal robot hardware
 // It success the FiveLinkWalker class for planning the step 
@@ -76,7 +76,7 @@ namespace hardware_ns
                 this->released = false;
                 this->contact_ptr_->left_contact.data = false;
                 this->contact_ptr_->right_contact.data = false;
-                this->walker_class.FiveLinkWalker_HLIP_initialize(
+                this->walker_class.output_controller_initialize(
                     this->hlip_params.orbit_init,this->hlip_params.vdes,this->hlip_params.COM_height,this->hlip_params.TSSP,
                     this->hlip_params.TDSP,this->hlip_params.step_size,this->hlip_params.swing_height,this->hlip_params.torso_angle);
 
@@ -218,10 +218,10 @@ namespace hardware_ns
                                             joint_vel(2);
 
                     this->walker_class.own_q << joint_pos.segment<5>(2);
-                    this->walker_class.FiveLinkWalker_HLIP_IK();
+                    this->walker_class.output_controller_IK();
                     
-                    VectorXd joint_pos_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Position();
-                    VectorXd joint_vel_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Velocity();
+                    VectorXd joint_pos_des = this->walker_class.output_controller_IK_solver.getSolution_Position();
+                    VectorXd joint_vel_des = this->walker_class.output_controller_IK_solver.getSolution_Velocity();
                     
                     this->motion_cmds.com_height_des = this->walker_class.SSP_output_des(0); 
                     this->motion_cmds.com_height_actual = COM_position_abs(2) - stance_leg_position(1);// com_z - stance_z
@@ -294,10 +294,10 @@ namespace hardware_ns
 
 
                     //put in all the values calculated into HLIP
-                    this->walker_class.FiveLinkWalker_HLIP_renew(joint_pos,joint_vel,
+                    this->walker_class.output_controller_renew(joint_pos,joint_vel,
                     input_state_data,d_input_state_data,this->contact_foot,input_COM_state,this->time_now);
 
-                    this->walker_class.FiveLinkWalker_HLIP_plan_desired();
+                    this->walker_class.output_controller_plan_desired();
 
                     // If due to any reason, the swing leg didn't touches the ground, make it streches down to find the ground.
                     if(this->time_now-this->walker_class.time_start > this->walker_class.TSSP){
@@ -324,18 +324,18 @@ namespace hardware_ns
                     this->motion_cmds.contact_foot = (this->contact_foot==left_leg)?0:1;
 
                     // Do IK to find desired joint position and velocity
-                    this->walker_class.FiveLinkWalker_HLIP_IK();
+                    this->walker_class.output_controller_IK();
 
                     if(this->walker_class.SSP_output_des.size() == 0){
                         RCLCPP_WARN(this->get_logger(), "Failed calculating IK output");
                     }
-                    VectorXd joint_pos_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Position();
-                    VectorXd joint_vel_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Velocity();
+                    VectorXd joint_pos_des = this->walker_class.output_controller_IK_solver.getSolution_Position();
+                    VectorXd joint_vel_des = this->walker_class.output_controller_IK_solver.getSolution_Velocity();
                     
                     // Do gravity compenstation 
                     VectorXd joint_pos_des_gravcomp = VectorXd::Zero(7);
                     joint_pos_des_gravcomp << 0., 0., joint_pos_des;
-                    VectorXd tau_gravity = this->walker_class.FiveLinkWalker_HLIP_gravity_compensation(joint_pos_des_gravcomp);
+                    VectorXd tau_gravity = this->walker_class.output_controller_gravity_compensation(joint_pos_des_gravcomp);
 
 
                     for(int i=0; i<4; i++){
@@ -475,7 +475,7 @@ namespace hardware_ns
             }
 
             Hlip_params hlip_params; // a struct wraps all the parameters
-            FiveLinkWalker_HLIP walker_class;
+            output_controller walker_class;
             std::string name_prefix;
             stance_leg contact_foot=left_leg;
             stance_leg previous_contact = right_leg; //1 for left_foot, 2 for right

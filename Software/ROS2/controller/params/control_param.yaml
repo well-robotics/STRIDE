@@ -21,7 +21,7 @@
 #     pitch_test: 0.
 
 # tuned using straight knee and straight footpad, Mar 22
-hardware_controller:
+S2S_controller:
   ros__parameters:
     kp_hip:  15.
     kp_knee: 15.

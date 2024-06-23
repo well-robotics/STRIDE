@@ -1,4 +1,4 @@
-// #include <nav_msgs/msg/odometry.hpp>
+
 #include <rclcpp/rclcpp.hpp>
 #include <rmw/types.h>
 
@@ -13,13 +13,6 @@
 #include "communication/msg/motion_commands.hpp"
 #include "communication/msg/joint_state.hpp"
 #include "communication/msg/pitch_state.hpp"
-
-// #include "Expression_hardware/COMPosition.hh"
-// #include "Expression_hardware/COM_velocity.hh"
-// #include "Expression_hardware/pLeftToe.hh"
-// #include "Expression_hardware/vLeftToe.hh"
-// #include "Expression_hardware/pRightToe.hh"
-// #include "Expression_hardware/vRightToe.hh"
 #include "Expressions/COMPosition.hh"
 #include "Expressions/COM_velocity.hh"
 #include "Expressions/pLeftToe.hh"
@@ -42,11 +35,8 @@
 #include <vector>
 #include <random>
 #include "rclcpp/rclcpp.hpp"
-// #include "tf2/LinearMath/Matrix3x3.h"
-// #include "tf2/LinearMath/Quaternion.h"
-// #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include "Eigen/Dense"
-#include "FiveLinkWalker_HLIP.hpp"
+#include "output_controller.hpp"
 #include "moving_average_filter.hpp"
 
 using namespace rclcpp;

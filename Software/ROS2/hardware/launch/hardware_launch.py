@@ -41,7 +41,7 @@ def generate_launch_description():
         ),
         #
         Node(
-            package="hlip",
+            package="controller",
             name="hardware_controller",
             executable="hardware_controller",
             prefix="nice -n -19 taskset -c 3",

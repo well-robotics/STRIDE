@@ -18,7 +18,7 @@
 
 #include "sim_controller.hpp"
 #include "Eigen/Dense"
-#include "FiveLinkWalker_HLIP.hpp"
+#include "output_controller.hpp"
 // #include "mujoco_sim_helper.hpp"
 // #include "MuJoCoMessageHandler.h"
 // #include "ros_utilities/ros_utilities.hpp"
@@ -155,13 +155,13 @@ namespace simulation_ns
             this->actuator_cmds.torque_feedforward = {0.0, 0.0, 0.0, 0.0};
             this->actuator_cmds.actuators_name = {"right_hip","right_knee","left_hip","left_knee"};
 
-            this->walker_class.FiveLinkWalker_HLIP_initialize(
+            this->walker_class.output_controller_initialize(
                 this->orbit_init,this->vdes,this->COM_height,this->TSSP,this->TDSP,this->step_size,this->swing_height,this->torso_angle);
 
         }
     private:
     //attributes inherate from FiveLinkWalker
-        FiveLinkWalker_HLIP walker_class;
+        output_controller walker_class;
         std::string name_prefix;
         int orbit = 1;//default orbit=P1
         double vdes=0.0;
@@ -354,17 +354,17 @@ namespace simulation_ns
                         joint_vel(2);
                 // Vector2d input_COM_state = Vector2d::Zero(2);
                 // input_COM_state << (COM_position_abs(0) - stance_leg_position(0)), COMvelocity(0);
-                // this->walker_class.FiveLinkWalker_HLIP_renew(joint_pos,joint_vel,
+                // this->walker_class.output_controller_renew(joint_pos,joint_vel,
                 // input_state_data,d_input_state_data,this->contact_foot,input_COM_state,this->sim_time);
                 // RCLCPP_INFO(this->get_logger(), "try new IK");
                 // this->walker_class.state_q << joint_pos(0), joint_pos(1), joint_pos(2), 0.6030, 2.3849, -.6119, -3.9071;
                 this->walker_class.own_q << joint_pos.segment<5>(2);
-                this->walker_class.FiveLinkWalker_HLIP_IK();
+                this->walker_class.output_controller_IK();
 
                 // RCLCPP_INFO(this->get_logger(), "desired_motor_pos...w/%f %f %f %f",joint_pos_des[3],joint_pos_des[4],joint_pos_des[5],joint_pos_des[6]);
                 // RCLCPP_INFO(this->get_logger(),"IK converged, hooray!");
-                VectorXd joint_pos_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Position();
-                VectorXd joint_vel_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Velocity();
+                VectorXd joint_pos_des = this->walker_class.output_controller_IK_solver.getSolution_Position();
+                VectorXd joint_vel_des = this->walker_class.output_controller_IK_solver.getSolution_Velocity();
                 // for(long i=0; i<joint_pos_des.size();i++){
                 //     wrap(joint_pos_des(i));
                 //     wrap(joint_vel_des(i));
@@ -467,7 +467,7 @@ namespace simulation_ns
                 RCLCPP_INFO(this->get_logger(), "T:%f", this->walker_class.T);
 
                 //put in all the values calculated into HLIP
-                this->walker_class.FiveLinkWalker_HLIP_renew(joint_pos,joint_vel,
+                this->walker_class.output_controller_renew(joint_pos,joint_vel,
                 input_state_data,d_input_state_data,this->contact_foot,input_COM_state,this->sim_time);
 
                 // RCLCPP_INFO(this->get_logger(),"renewal successed");
@@ -476,7 +476,7 @@ namespace simulation_ns
                 // this->walker_class.step_real, // real step size by deadbeat control
                 // this->walker_class.SSP_output_start(1));//staring swing x
 
-                this->walker_class.FiveLinkWalker_HLIP_plan_desired();
+                this->walker_class.output_controller_plan_desired();
 
                 // RCLCPP_INFO(this->get_logger(),"planning successed");
 
@@ -496,12 +496,12 @@ namespace simulation_ns
                 this->motion_cmds.vel_des.y =this->walker_class.SSP_output_vdes(0);//borrow y for COM_Z
                 this->motion_cmds.contact_foot = (this->contact_foot==left_leg)?0:1;
 
-                this->walker_class.FiveLinkWalker_HLIP_IK();
+                this->walker_class.output_controller_IK();
 
                 MatrixXd IK_Jacobian = MatrixXd::Zero(5,5);
                 MatrixXd IK_y = MatrixXd::Zero(5,1);
-                IK_Jacobian << this->walker_class.FiveLinkWalker_HLIP_J_output(this->walker_class.own_q);
-                IK_y << this->walker_class.FiveLinkWalker_HLIP_y_output(this->walker_class.own_q);
+                IK_Jacobian << this->walker_class.output_controller_J_output(this->walker_class.own_q);
+                IK_y << this->walker_class.output_controller_y_output(this->walker_class.own_q);
                 RCLCPP_INFO(this->get_logger(),"\n.%3f .%3f .%3f .%3f .%3f",
                 IK_y(0,0),IK_y(1,0),IK_y(2,0),IK_y(3,0),IK_y(4,0)
                 );
@@ -514,8 +514,8 @@ namespace simulation_ns
                     // RCLCPP_INFO(this->get_logger(), "size_of SSP_output_vdes is %ld...",this->walker_class.SSP_output_des.size());
                 }
 
-                VectorXd joint_pos_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Position();
-                VectorXd joint_vel_des = this->walker_class.FiveLinkWalker_HLIP_IK_solver.getSolution_Velocity();
+                VectorXd joint_pos_des = this->walker_class.output_controller_IK_solver.getSolution_Position();
+                VectorXd joint_vel_des = this->walker_class.output_controller_IK_solver.getSolution_Velocity();
                 // for(long i=0; i<joint_pos_des.size();i++){
                 //      wrap(joint_pos_des(i));
                 //     wrap(joint_vel_des(i));

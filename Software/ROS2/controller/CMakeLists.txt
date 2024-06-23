@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(hlip)
+project(controller)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -27,10 +27,8 @@ include_directories(
 
 set(hlip_files include/Hlip/HLIP.hpp
                src/HLIP.cpp
-               include/Hlip/LIP.hpp
-               src/LIP.cpp
-               include/Hlip/FiveLinkWalker_HLIP.hpp
-               src/FiveLinkWalker_HLIP.cpp
+               include/Hlip/output_controller.hpp
+               src/output_controller.cpp
                include/Hlip/bezier_tools.hpp
                src/bezier_tools.cpp
                include/Hlip/IK_newton.hpp 
@@ -59,21 +57,21 @@ add_library(Hlip_lib ${hlip_files})
 target_link_libraries(Hlip_lib Eigen3::Eigen)
 add_subdirectory(include/Expressions)
 
-add_executable(hardware_controller src/hardware_controller.cpp)
-target_link_libraries(hardware_controller Eigen3::Eigen)
-target_link_libraries(hardware_controller DynamicExpressions)
-target_link_libraries(hardware_controller Hlip_lib)
+add_executable(S2S_controller src/S2S_controller.cpp)
+target_link_libraries(S2S_controller Eigen3::Eigen)
+target_link_libraries(S2S_controller DynamicExpressions)
+target_link_libraries(S2S_controller Hlip_lib)
 
-ament_target_dependencies(hardware_controller 
+ament_target_dependencies(S2S_controller 
 std_msgs
 rclcpp 
 communication
 hardware
 )
 
-ament_target_dependencies(hardware_controller rclcpp std_msgs hardware) 
+ament_target_dependencies(S2S_controller rclcpp std_msgs hardware) 
 install(TARGETS 
-  hardware_controller 
+  S2S_controller 
   DESTINATION lib/${PROJECT_NAME})
 install(FILES params/control_param.yaml
       DESTINATION share/${PROJECT_NAME}/params)
