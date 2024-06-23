@@ -78,10 +78,6 @@ install(TARGETS
 install(FILES params/control_param.yaml
       DESTINATION share/${PROJECT_NAME}/params)
 
-set(ekf_file src/ekf.cpp
-             include/Hlip/ekf.hpp)
-add_library(ekf_lib ${ekf_file})
-target_link_libraries(ekf_lib Eigen3::Eigen)
 
 if (CMAKE_SYSTEM_PROCESSOR MATCHES "^(X86|X32|X64|x64|x86_64)$" )
   add_executable(sim_hard_bridge src/simulator_hardware_bridge.cpp)
@@ -97,7 +93,6 @@ if (CMAKE_SYSTEM_PROCESSOR MATCHES "^(X86|X32|X64|x64|x86_64)$" )
   tf2
   tf2_geometry_msgs
   )
-  target_link_libraries(sim_hard_bridge ekf_lib)
   install(
   TARGETS sim_hard_bridge 
   DESTINATION lib/${PROJECT_NAME})

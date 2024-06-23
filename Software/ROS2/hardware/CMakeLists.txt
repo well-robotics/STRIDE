@@ -44,12 +44,6 @@ target_link_libraries(roll_velo_pub IMU_lib)
 find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
 target_link_libraries(contact_pub ${WIRINGPI_LIBRARIES})
 
-set(ekf_file src/ekf.cpp
-             include/ekf.hpp)
-add_library(ekf_lib ${ekf_file})
-target_link_libraries(ekf_lib Eigen3::Eigen)
-target_link_libraries(imu_pub ekf_lib)
-
 install(TARGETS joint_pub DESTINATION lib/${PROJECT_NAME})
 install(TARGETS imu_pub DESTINATION lib/${PROJECT_NAME})
 install(TARGETS contact_pub DESTINATION lib/${PROJECT_NAME})

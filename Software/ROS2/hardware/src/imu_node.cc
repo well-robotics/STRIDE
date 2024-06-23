@@ -6,9 +6,7 @@
 #include "communication/msg/pitch_state.hpp"
 #include "moving_average_filter.hpp"
 
-#include "ekf.hpp"
-
-#include "exponential_moving_average_filter.hpp"
+#include "low_pass_filter.hpp"
 
 #undef I2C_ADD_ICM20948
 #define I2C_ADD_ICM20948 0x69
@@ -33,7 +31,6 @@ public:
     exp_filter.set_coeff(0.9);
 
     this->time_start = this->get_clock()->now().seconds();
-    EKF_filter.EKF_init();
   }
 private: 
   void timer_callback(){
@@ -109,9 +106,8 @@ private:
   double b = 0;
   Madgwick_filter filter; 
   MovingAverageFilter<double> average_filter[2] = {MovingAverageFilter<double>(10,0.0), MovingAverageFilter<double>(10,0.0)}; // average_filter[0] for pitch angle and average_filter[1] for pitch velocity
-  ExponentialMovingAverageFilter exp_filter;
+  LowPassFilter exp_filter;
 
-  ekf::EKF EKF_filter;
   double time_start;
 
 };

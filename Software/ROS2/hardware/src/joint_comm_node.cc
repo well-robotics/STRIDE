@@ -11,7 +11,7 @@
 #include "rclcpp/rclcpp.hpp"
 //#include "sensor_msgs/msg/joint_state.hpp"
 #include "communication/msg/joint_state.hpp"
-#include "exponential_moving_average_filter.hpp"
+#include "low_pass_filter.hpp"
 
 using namespace LibSerial;
 using namespace std;
@@ -237,7 +237,7 @@ private:
   double dt = 0.005;
 
   // instantiate the filter for the joint velocities
-  ExponentialMovingAverageFilter filters[4];
+  LowPassFilter filters[4];
 
   // instantiate the message to be published
   communication::msg::JointState joint_states;

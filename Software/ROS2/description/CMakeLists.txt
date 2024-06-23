@@ -27,7 +27,6 @@ install(TARGETS ${PROJECT_NAME}
   INCLUDES DESTINATION include
 )
 
-
          
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

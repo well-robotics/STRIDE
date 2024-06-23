@@ -1,7 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "hardware_controller.hpp"
 #include <nav_msgs/msg/odometry.hpp>
-#include "ekf.hpp"
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
@@ -54,7 +53,6 @@ public:
     motion_subscription = this->create_subscription<communication::msg::MotionCommands>(
         "hardware/motion_cmds", qos, std::bind(&SimulatorToHardwarePublisher::motion_callback, this, std::placeholders::_1));
 
-    EKF_Filter.EKF_init();
   }
 
 private:
@@ -329,7 +327,6 @@ private:
 
   float kp_hip,kp_knee,kd_hip,kd_knee;
   double time_start;
-  ekf::EKF EKF_Filter;
 };
 
 int main(int argc, char *argv[])
