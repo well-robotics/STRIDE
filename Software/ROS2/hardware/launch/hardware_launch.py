@@ -14,7 +14,6 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package = 'hardware',
-            #namespace = 'project',
             executable = 'imu_pub',
             name = 'imu_pub_node',
             prefix="nice -n -19 taskset -c 1",
@@ -24,21 +23,18 @@ def generate_launch_description():
         ),
         Node(
             package = 'hardware',
-            #namespace = 'project',
             prefix="nice -n -19 taskset -c 1",
             executable = 'roll_velo_pub',
             name = 'roll_velo_pub_node'
         ),
         Node(
             package = 'hardware',
-            #namespace = 'project',
             executable = 'contact_pub',
             prefix="nice -n -19 taskset -c 1",
             name = 'contact_pub_node',
         ),
         Node(
             package = 'hardware',
-            #namespace = 'project',
             executable = 'joint_pub',
             prefix="nice -n -19 taskset -c 0",
             name = 'joint_inform_pub_node'

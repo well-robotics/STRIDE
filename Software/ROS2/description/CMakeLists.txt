@@ -11,9 +11,6 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(ament_cmake REQUIRED)
 
 
-include_directories(include)
-
-
 add_library(${PROJECT_NAME} INTERFACE)
 
 
