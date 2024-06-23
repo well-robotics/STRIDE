@@ -1,3 +1,15 @@
+/*
+    @file: imu_i2c.h
+        This file contains functions for interfacing with i2c devices
+    
+    @Author:
+        wjd123ap
+        This file is originally open-sourced in ICM20948_ROS_node repo (https://github.com/wjd123ap/ICM20948_ROS_node/blob/main/src/sensor_set/include/sensor_set/IMU_i2c.h)
+    
+    @Modifier: 
+        Yuhao Huang
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 

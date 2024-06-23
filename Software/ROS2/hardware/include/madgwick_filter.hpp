@@ -1,3 +1,17 @@
+/*
+    @file: 
+        This file contains a Madgwick filter for orientation filtering
+    
+    @Author: 
+        Sebastian O.H. Madgwick 
+        (This code is originally from the paper: An efficient orientation filter for inertial and inertial/magnetic sensor arrays (https://courses.cs.washington.edu/courses/cse466/14au/labs/l4/madgwick_internal_report.pdf))
+    
+    @Modified: 
+        Yuhao Huang, Yicheng Zeng and Xiaobin Xiong
+*/
+
+
+
 #include <math.h>
 
 class Madgwick_filter{

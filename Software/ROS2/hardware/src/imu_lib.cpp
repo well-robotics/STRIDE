@@ -1,3 +1,17 @@
+/*
+    @file: imu_lib.hpp
+        This file contains classes for interfacing with IMUs 
+    
+    @Author:
+        wjd123ap
+        This file is originally open-sourced in ICM20948_ROS_node repo (https://github.com/wjd123ap/ICM20948_ROS_node/blob/main/src/sensor_set/include/sensor_set/IMU_i2c.h)
+    
+    @Modifier: 
+        Yuhao Huang
+*/
+
+
+
 #include "imu_lib.hpp"
 
 uint64_t micro_time() {

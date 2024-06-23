@@ -75,8 +75,6 @@ private:
 
   void timer_callback()
   { 
-    // test sine wave following
-    // this->generateSinWaveDebug(); 
     
     this->sendingDataEncode(this->joint_desired, this->joint_desired_encoded);
     this->sendingAndReadingData();
@@ -91,7 +89,6 @@ private:
 
     // check sanity of the data received
     // theoretically the hip joints should not go beyond 90 degree, knee joints should not go beyond 150 degree 
-    
     for(i=0; i<4; i++){
       if(this->joint_real[i] >2.5 || this->joint_real[i] < -2.5){ 
         this->joint_real[i] = this->joint_prev[i]; // use the previous step data 
@@ -202,19 +199,6 @@ private:
       arduino1.WriteByte(this->joint_desired_encoded[i]);
     }
     arduino1.WriteByte('e');
-  }
-
-  void generateSinWaveDebug(){
-    auto now = std::chrono::system_clock::now();
-    std::chrono::duration<double> elapsed_all_seconds = now - past;
-    //std::cout<< elapsed_all_seconds.count() << std::endl; 
-    double tem = 0.5*sin(5 * 3.1415 * elapsed_all_seconds.count());
-    int i = 0; 
-    for(i=0;i<4;i++){
-      joint_desired[i] = tem;
-      //std::cout << joint_desired[i] <<std::endl; 
-      joint_debug.position[i] = tem;
-    }
   }
   
   // instantiate the publisher, subscriber and timer
