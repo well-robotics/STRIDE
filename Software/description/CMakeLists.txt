@@ -16,22 +16,11 @@ include_directories(include)
 
 add_library(${PROJECT_NAME} INTERFACE)
 
-# export header only library
-target_include_directories(${PROJECT_NAME} INTERFACE
-  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
-  "$<INSTALL_INTERFACE:include>"
-)
-ament_export_targets("export_${PROJECT_NAME}" HAS_LIBRARY_TARGET)
-
 
 ## install model folder 
 install(DIRECTORY model
          DESTINATION share/${PROJECT_NAME})
 
-
-install(DIRECTORY include/${PROJECT_NAME}/
-         DESTINATION include/${PROJECT_NAME}
-       )
 
 install(TARGETS ${PROJECT_NAME}
   EXPORT "export_${PROJECT_NAME}"
@@ -40,11 +29,6 @@ install(TARGETS ${PROJECT_NAME}
   RUNTIME DESTINATION lib
   INCLUDES DESTINATION include
 )
-
-
-
-
-
 
 
          
