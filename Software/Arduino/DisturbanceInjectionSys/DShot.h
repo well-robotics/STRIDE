@@ -1,3 +1,17 @@
+/*
+    @file: DShot.h
+        This file contains functions for generating DShot signals uisng Arduino
+    
+    @Author:
+        gueei
+        This file is originally open-sourced in DShot-Arduino repo (https://github.com/gueei/DShot-Arduino)
+    
+    @Modifier: 
+        Yuhao Huang
+*/
+
+
+
 #include "Arduino.h"
 
 #ifndef DShot_h

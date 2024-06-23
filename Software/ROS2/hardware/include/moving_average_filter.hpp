@@ -2,9 +2,6 @@ template <class T>
 class MovingAverageFilter{
   // this filter outputs the averaged reading on window n for data type T
   // requisite: the + and / operators between themselves and with scalar values should be defined
-  // TODO: 
-  // 1. dynamically allocate memory for the filter data array
-  // 2. a method for initializing the filter with values other than zeros
 public: 
   int window_size; 
   T previous_data[50];
