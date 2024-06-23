@@ -1,4 +1,4 @@
-# mujoco Package
+# Mujoco Package
 
 This package is modified from the [open sourced ROS2 MuJoCo package](https://github.com/MindSpaceInc/Spot-MuJoCo-ROS2) from mindspace.inc.
 
