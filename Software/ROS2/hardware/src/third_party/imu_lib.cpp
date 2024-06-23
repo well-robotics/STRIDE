@@ -12,7 +12,7 @@
 
 
 
-#include "imu_lib.hpp"
+#include "third_party/imu_lib.hpp"
 
 uint64_t micro_time() {
     struct timeval tv;

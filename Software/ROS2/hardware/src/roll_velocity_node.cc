@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp" 
 #include "std_msgs/msg/float32.hpp"
-#include "imu_lib.hpp"
+#include "third_party/imu_lib.hpp"
 #include "moving_average_filter.hpp"
 
 #define BAR_LENGTH 1.30f

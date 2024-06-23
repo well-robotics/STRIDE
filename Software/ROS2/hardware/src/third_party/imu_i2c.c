@@ -12,7 +12,7 @@
 
 
 
-#include "imu_i2c.h"
+#include "third_party/imu_i2c.h"
 
 #ifdef __cplusplus
 extern "C" {

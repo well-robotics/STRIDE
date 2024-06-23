@@ -32,11 +32,11 @@ ament_target_dependencies(contact_pub rclcpp communication)
 ament_target_dependencies(roll_velo_pub rclcpp std_msgs)
 
 
-set(IMU_FILES include/imu_i2c.h
-              include/imu_lib.hpp
-              src/imu_i2c.c
-              src/imu_lib.cpp
-              include/madgwick_filter.hpp)          
+set(IMU_FILES include/third_party/imu_i2c.h
+              include/third_party/imu_lib.hpp
+              src/third_party/imu_i2c.c
+              src/third_party/imu_lib.cpp
+              include/third_party/madgwick_filter.hpp)          
 add_library(IMU_lib ${IMU_FILES})
 target_link_libraries(imu_pub IMU_lib)
 target_link_libraries(roll_velo_pub IMU_lib)

@@ -12,7 +12,7 @@
 
 
 
-#include "imu_i2c.h"
+#include "third_party/imu_i2c.h"
 #include <iostream>
 #include <thread>
 uint64_t micro_time(void);

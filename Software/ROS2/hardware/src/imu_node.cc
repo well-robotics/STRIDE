@@ -1,8 +1,8 @@
 #include "rclcpp/rclcpp.hpp" 
 #include "sensor_msgs/msg/imu.hpp"
 #include "std_msgs/msg/float32.hpp"
-#include "imu_lib.hpp"
-#include "madgwick_filter.hpp"
+#include "third_party/imu_lib.hpp"
+#include "third_party/madgwick_filter.hpp"
 #include "communication/msg/pitch_state.hpp"
 #include "moving_average_filter.hpp"
 
