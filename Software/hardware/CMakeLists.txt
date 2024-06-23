@@ -69,9 +69,7 @@ ament_export_include_directories(include)
 find_package(Threads REQUIRED)
 find_package(PkgConfig)
 pkg_check_modules(SERIAL libserial)
-# if(NOT SERIAL)
-#     message(FATAL_ERROR "Serial not found")
-# endif()
+
 
 target_include_directories(joint_pub PRIVATE ${SERIAL_INCLUDE_DIRS})
 target_link_libraries(joint_pub ${SERIAL_LDFLAGS} ${CMAKE_THREAD_LIBS_INIT})

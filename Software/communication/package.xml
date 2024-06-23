@@ -4,7 +4,7 @@
   <name>communication</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="well.robotics@gmail.com">Xiaobin Xiong</maintainer>
+  <maintainer email="well.robotics@gmail.com">Yuhao Huang, Yicheng Zeng and Xiaobin Xiong</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
@@ -26,11 +26,8 @@
  
   <depend>rclcpp</depend>
  
-  <!-- <depend>ros_utilities</depend> -->
-  <!-- <depend>control_common_toolbox</depend> -->
 
   <depend>description</depend>
-  <!-- <depend>eom</depend> -->
   <export>
     <build_type>ament_cmake</build_type>
   </export>

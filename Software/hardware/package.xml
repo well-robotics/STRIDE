@@ -4,7 +4,7 @@
   <name>hardware</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="huangyuhaowork@outlook.com">yuhao</maintainer>
+  <maintainer email="well.robotics@gmail.com">Yuhao Huang, Yicheng Zeng and Xiaobin Xiong</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclcpp</depend>

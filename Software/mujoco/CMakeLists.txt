@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(mujoco)
 
-# if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-#   add_compile_options(-Wall -Wextra -Wpedantic)
-# endif()
-
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
@@ -20,18 +16,15 @@ list(APPEND ${PROJECT_NAME}_CONFIG_EXTRAS
 
 # find dependencies
 find_package(rclcpp REQUIRED)
-# ## ADDED THIS LINE BELOW DEC 06, SEE IF HELPS
 find_package(glfw3 REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-# find_package(description REQUIRED) # added Jan-24
 find_package(communication REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
-# find_package(control_common_toolbox REQUIRED)
 
 # BLASFEO Option
 if(NOT TARGET mujoco)
@@ -53,14 +46,12 @@ communication
 description
 geometry_msgs 
 tf2 tf2_ros nav_msgs cv_bridge
-# control_common_toolbox
 )
 
 target_include_directories(simulation PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:include>)
         
-# target_compile_options(simulation PUBLIC ${DEEPBREAK_CXX_FLAGS})  
 
 
 install(TARGETS simulation
