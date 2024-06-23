@@ -1,16 +1,12 @@
 # Communication package
-This package contains all the self-defined message and service interfaces. They can be divided into two classes:  
-## run-time interfaces  
-1. ActuatorCmds.msg 
-2. ContactState.msg
-3. ContactForce.msg
-4. JointStates.msg 
+This package contains all the self-defined message and service interfaces being used in simulation and hardware.
+## hardware interfaces  
+1. ActuatorCmds.msg: for sending desired joint trajectories from Raspberry Pi to Arduino
+2. ContactState.msg: for sending contact sensor states from contact sensor node to walking controller
+3. JointStates.msg: for sending joint encoder readings from serial communication node to walking controller 
+4. PitchState.msg: for sending pelvis angle and pelvis angular velocity to walking controller
+4. MotionCommands.msg: for outputs states logging
 
 ## simulation interfaces
-1. MotionCommands.msg
-2. SimulationReset.srv
-
-## built-in interfaces
-List of built-in interfaces used
-1. sensor_msgs/msg/Imu.msg
-2. std_msgs/msg/Float32.msg
+1. MotionCommands.msg: for outputs states logging
+2. SimulationReset.srv: for MuJoco simulation reset
