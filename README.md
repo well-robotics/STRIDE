@@ -6,4 +6,4 @@ This repo includes the software and hardware design of a open-sourced planar bip
 The package mainly consists of two folders, one for mechanical designs and one for software. The BOM includes all the materials needed to build the robot, along with an estimated cost for each item.
 ## Installation
 ### LibSerial
-This project uses LibSerial as the serial communication middleware, the detailed installation can be found in the Github page of LibSerial: https://github.com/crayzeewulf/libserial. Following the guideline of CMake based installations. 
+This project uses LibSerial as the serial communication middleware, the detailed installation can be found in the Github page of LibSerial: https://github.com/crayzeewulf/libserial. Following the guideline of CMake based installations and use default installation folder. 
