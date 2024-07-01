@@ -1,3 +1,7 @@
+/*
+ * @class: implementation of H-LIP based step planner
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 #include "HLIP.hpp"
 #include "Eigen/Dense" 
 #include <iostream> 

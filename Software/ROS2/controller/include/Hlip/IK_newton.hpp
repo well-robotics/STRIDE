@@ -1,4 +1,7 @@
-// using Newton raphson to solve Inverse Kinematics
+/*
+ * @class: implementation of Newton-Raphson inverse kinematics
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 
 #ifndef IK_Newton_SOLVER_HPP
 #define IK_Newton_SOLVER_HPP

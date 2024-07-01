@@ -1,3 +1,9 @@
+/*
+ * @class: a ROS2 node for realizing H-LIP based walking
+        It success the FiveLinkWalker class for planning the step 
+        It sends desired output to lower level controller to follow the trajectory
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 
 #include <rclcpp/rclcpp.hpp>
 #include <rmw/types.h>

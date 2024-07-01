@@ -1,3 +1,7 @@
+/*
+ * @class: implementation of H-LIP based step planner
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 #ifndef HLIP_HPP
 #define HLIP_HPP
 

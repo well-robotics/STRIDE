@@ -1,3 +1,7 @@
+/*
+ * @class: implementation of H-LIP based output controller
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 #include <functional>
 #include <fstream>
 #include "bezier_tools.hpp"

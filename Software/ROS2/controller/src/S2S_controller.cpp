@@ -1,10 +1,11 @@
-////TODO: switch odom to boom imu reading
-//// always treat z as -contact(z)
-#include <S2S_controller.hpp>
+/*
+ * @class: a ROS2 node for realizing H-LIP based walking
+        It success the FiveLinkWalker class for planning the step 
+        It sends desired output to lower level controller to follow the trajectory
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 
-// This code realized the controller for planar bipedal robot hardware
-// It success the FiveLinkWalker class for planning the step 
-// It sends desired output to lower level controller to follow the trajectory
+#include <S2S_controller.hpp>
 
 struct Hlip_params{
     int orbit = 1; //default orbit=P1

@@ -1,6 +1,7 @@
 /*
  * @brief Functions for computing Bezier curves and their derivatives.
  * @author Jenna Reher (jreher@caltech.edu)
+ * @modifier Yuhao Huang, Yicheng Zeng
  */
 
 #ifndef BEZIER_TOOLS_HPP

@@ -1,3 +1,7 @@
+/*
+ * @class: implementation of H-LIP based output controller
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 #pragma once 
 #ifndef OUTPUT_CONTROLLER
 #define OUTPUT_CONTROLLER
