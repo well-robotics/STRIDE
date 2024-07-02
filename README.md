@@ -6,8 +6,8 @@ This repo includes the software and hardware design of a open-sourced planar bip
 The package mainly consists of two folders, one for mechanical designs and one for software. The BOM includes all the materials needed to build the robot, along with an estimated cost for each item.
 ## Installation
 ### ROS2 
-This project uses ROS2 as communication middleware. To configure ROS2 on workstation or PC, we recommend using Ubuntu 22.04 and ROS2 Humble which is validated by us. \\
-The installation guideline of ROS2 Humble is in: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html. To configure ROS2 on Raspberry Pi 4b+, you should build from source, follow the guidelines in https://docs.ros.org/en/humble/How-To-Guides/Installing-on-Raspberry-Pi.html and https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html. \\
+This project uses ROS2 as communication middleware. To configure ROS2 on workstation or PC, we recommend using Ubuntu 22.04 and ROS2 Humble which is validated by us. \
+The installation guideline of ROS2 Humble is in: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html. To configure ROS2 on Raspberry Pi 4b+, you should build from source, follow the guidelines in https://docs.ros.org/en/humble/How-To-Guides/Installing-on-Raspberry-Pi.html and https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html. \
 After installation, you can verify the setup by checking environment variables: 
 ```bash
   printenv | grep -i ROS
