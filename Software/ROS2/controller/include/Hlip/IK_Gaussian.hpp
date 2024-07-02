@@ -1,3 +1,7 @@
+/*
+ * @class: implementation of Gaussian-Newton inverse kinematics
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 #ifndef IK_GAUSSIAN_SOLVER_HPP
 #define IK_GAUSSIAN_SOLVER_HPP
 

@@ -1,3 +1,7 @@
+/*
+ * @class: implementation of PID controller
+ * @author: Yuhao Huang, Yicheng Zeng
+*/
 #pragma once
 
 #include <stddef.h>
