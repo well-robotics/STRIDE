@@ -6,9 +6,35 @@ It creates a simulation thread in MuJoCo with MJCF model file provided by descri
 
 ## Package Structure
 
-MujocoMessageHandler is the connection between MuJoCo and ROS2, it samples the required sensor data and publishes to according topics. This includes /ContactState, /JointState, /ImuData.(Also check communication/msg for details).
+`MujocoMessageHandler.cpp` is the connection between MuJoCo and ROS2, it samples the required sensor data and publishes to according topics. This includes `/ContactState`, `/JointState`, `/ImuData`.(Also check communication/msg for details).
 
 simulation executable(main.cc) establishes the physics thread in MuJoCo
+
+## Installation Guide
+
+This guide referenced this [installation instructions][https://gist.github.com/saratrajput/60b1310fe9d9df664f9983b38b50d5da], To download MuJoCo, please go check its [releases][https://github.com/google-deepmind/mujoco/releases]. This version of STRIDE uses [2.3.2][https://github.com/google-deepmind/mujoco/releases/tag/2.3.2]. Take 2.3.2 as an example, after downloading the zip file:
+
+```bash
+cd /home/username/
+mkdir .mujoco
+tar -xvf mujoco232-linux-x86_64.tar.gz -C ~/.mujoco/
+```
+
+Add these lines to your `.bashrc`:
+
+```bas
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/username/.mujoco/mujoco-2.3.2/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+export PATH="$LD_LIBRARY_PATH:$PATH"
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
+```
+
+To test if the installation is successful, use the following line to test:
+
+```bash
+cd ~/.mujoco/mujoco210/bin
+./simulate ../model/humanoid.xml
+```
 
 ### Things to notice
 
