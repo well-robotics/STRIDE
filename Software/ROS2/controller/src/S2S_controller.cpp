@@ -481,7 +481,7 @@ namespace hardware_ns
             stance_leg contact_foot=left_leg;
             stance_leg previous_contact = right_leg; //1 for left_foot, 2 for right
             double pitch=0;
-            deque<double> pitch_list;
+            std::deque<double> pitch_list;
             double pitch_vel = 0;
             bool released=false;
             double time_now;

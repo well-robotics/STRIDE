@@ -44,6 +44,7 @@
 #include "Eigen/Dense"
 #include "output_controller.hpp"
 #include "moving_average_filter.hpp"
+#include <deque>
 
 using namespace rclcpp;
 using namespace std::chrono_literals;
